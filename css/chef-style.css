@@ -1,0 +1,65 @@
+
+.chef{
+  float: left;
+  width: 100%;
+
+}
+
+.chef h1{
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 50px;
+  line-height: 100px;
+  display: block;
+  width: 500px;
+  border-bottom: 2px var(--titlemenu) solid;
+}
+
+.chef img{
+  width: 60%;
+}
+.onechefblock{
+  width: 100%;
+  position: relative;
+  padding: 20px 0 20px 0;
+
+}
+.chefdescription{
+  width: 45%;
+  padding: 20px;
+  background-color: white;
+  position: absolute;
+  right: 0px;
+  top: 15%;
+}
+.chefdescription p{
+  line-height: 25px;
+}
+
+
+
+
+.onechefblockodd{
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 20px 0 20px 0;
+}
+.onechefblockodd img{
+  float: right;
+}
+.chefdescriptionodd{
+  width: 45%;
+  padding: 20px;
+  background-color: white;
+  position: absolute;
+  left: 0px;
+  top: 15%;
+}
+.chefdescriptionodd p{
+  line-height: 25px;
+}
+
+;

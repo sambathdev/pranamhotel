@@ -1,0 +1,50 @@
+
+#newsandpromotions{
+  background-image: url(../img/newsandpromotionsbg.jpg);
+  height: 400px;
+  width: 100%;
+  float: left;
+  background-size: cover;
+}
+.blockcontain{
+  margin-top: 50px;
+  float: left;
+  width: 100%;
+}
+.makegrid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  grid-gap: 3.5%;
+}
+.block{
+  border: 1px var(--titlemenu) solid;
+  position: relative;
+}
+.block img{
+  display: block;
+  width: 100%;
+
+}
+.block a{
+  display: block;
+  width: 60px;
+  line-height: 30px;
+  background-color: var(--titlemenu);
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  color: var(--white);
+  margin-right: 10px;
+}
+.describtion{
+  padding: 10px;
+}
+.describtion h1{
+  color: var(--titlemenu);
+  font-size: 18px;
+}
+.describtion p{
+
+
+}

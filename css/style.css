@@ -1,0 +1,29 @@
+:root {
+  --white: white;
+  --bg: #f2f2f2;
+  --font: black;
+  --titlemenu: #ad935d;
+  --navheight: 60px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+body{
+  background-color: var(--bg);
+}
+.center{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.menutitle{
+  color: var(--titlemenu);
+  font-size: 40px;
+  margin: 30px;
+}
+.body{
+  float: left;
+  width: 100%;
+}

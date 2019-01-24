@@ -1,0 +1,95 @@
+
+#header{
+  background-color: var(--white);
+  height: var(--navheight);
+  width: 100%;
+  float: left;
+}
+#logo{
+  height: var(--navheight);
+  float: left;
+}
+#logo img{
+  height: var(--navheight);
+}
+
+
+
+nav li a {
+    transition: all 20ms ease-in-out;
+  }
+
+nav {
+    background-color: #fff;
+    width: 100%;
+    height: 40px;W
+
+}
+
+nav ul {
+    float: right;
+
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: var(--navheight);
+    margin: 0 10px 0 10px;
+    background-color: #fff;
+    color: #a5a5a5;
+    text-align: center;
+
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 1px;
+    margin-left: -5px;
+    margin-top: -1px;
+    background: #000;
+    transition: all .3s;
+}
+
+nav ul li a:hover::after {
+    transition: all .3s;
+}
+
+nav ul li a:hover {
+    color:#535353;
+    transition: 400ms;
+}
+
+nav ul ul a{
+    font-size: 16px;
+}
+
+nav ul ul {
+    position: absolute;
+    background-color: #fff;
+    overflow: hidden;
+    max-height: 0px;
+    transition: 0.5s;
+}
+
+nav ul li:hover ul {
+    max-height: 300px;
+}
+
+nav ul ul a:hover {
+    color: black;
+    transition: 150ms;
+    border-left: 5px black solid;
+}
+
+
+;
