@@ -28,6 +28,7 @@
 	height: 400px;
 	float: left;
 	position: relative;
+	z-index: -1;
 }
 .background img{
 	width: 100%;
