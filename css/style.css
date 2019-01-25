@@ -15,13 +15,18 @@ body{
 }
 .center{
   max-width: 1200px;
+  position: relative;
   margin: auto;
 }
 
 .menutitle{
   color: var(--titlemenu);
   font-size: 40px;
-  margin: 30px;
+  
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  
 }
 .body{
   float: left;

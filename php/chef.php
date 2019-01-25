@@ -4,10 +4,9 @@
 ?>
 <!-- include header -->
     <div class="body">
-      <div class="background"> <!-- slide -->
-        <div class="center">
-          <p class="menutitle">Chef</p>
-        </div>
+      <div class="background" > <!-- slide -->
+        <p class="menutitle">Chef</p>
+        <img id="slide" onMouseover="stopShow()" onMouseout="runShow()">
       </div>
 
       <div class="chef">

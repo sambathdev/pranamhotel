@@ -5,10 +5,9 @@
 <!-- include header -->
 
 <div class="body">
-  <div class="background">
-    <div class="center">
-      <p class="menutitle">News & Promotions</p>
-    </div>
+  <div class="background" > <!-- slide -->
+    <p class="menutitle">News & Promotions</p>
+    <img id="slide" onMouseover="stopShow()" onMouseout="runShow()">
   </div>
   <div class="blockcontain">
     <div class="center">
