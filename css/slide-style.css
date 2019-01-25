@@ -14,13 +14,14 @@
     float: left;
     background-size: cover;
     overflow: hidden;
-    animation: changebg 60s linear infinite;
+    animation: changebg 60s;
+   
 }
 
 @keyframes changebg {
-    0% { background-image:  url(../img/logostock.png);}
+    0% { background-image:  url(http://warszawa.intercontinental.com/wp-content/uploads/2017/08/DownTown-Restaurant-Steakhouse-46-1.jpg);}
     10% { background-image: url(../img/newsandpromotionsbg.jpg);}
-    20% { background-image: url(../img/logostock.png); }
+    20% { background-image: url(https://www.noosasprings.com.au/wp-content/uploads/2017/02/Restaurant-Main-Image-1200x500.jpg); }
     30% { background-image: url(../img/newsandpromotionsbg.jpg); }
     40% { background-image: url(../img/logostock.png); }
     50% { background-image: url(../img/newsandpromotionsbg.jpg); }
@@ -31,60 +32,57 @@
     100% { background-image: url(../img/newsandpromotionsbg.jpg); }
 }
 
-.blend {
-    position: relative;
-    margin: 25% auto;
-    color: white;
-    font-size: 4em;
-    font-family: 'Montserrat', sans-serif;
-    border: 10px solid #ffffff;
-    border-bottom: 30px  solid #ffffff;
-    border-top: 30px  solid #ffffff;
-    width: 420px;
-    text-align: center;
-    padding: 5px;
-    mix-blend-mode: soft-light;
-    animation: blendmode 15s linear infinite;
-}
+
 
 @keyframes blendmode {
-    0% { mix-blend-mode: color-dodge;
+    0% { 
+    	/*mix-blend-mode: color-dodge;*/
         color: #ecff98;
         border-color: #ecff98;}
-    10% { mix-blend-mode: color-dodge;
+    10% { 
+    	/*mix-blend-mode: color-dodge;*/
         color: #ecff98;
         border-color: #ecff98;}
 
-    20% { mix-blend-mode: hard-light;
+    20% { 
+    	/*mix-blend-mode: hard-light;*/
         color: #a5f7fd;
         border-color: #a5f7fd;}
-    30% { mix-blend-mode: hard-light;
+    30% { 
+    	/*mix-blend-mode: hard-light;*/
         color: #a5f7fd;
         border-color: #a5f7fd;}
 
-    40% { mix-blend-mode: difference;
+    40% { 
+    	/*mix-blend-mode: difference;*/
         color: #00f800;
         border-color: #00f800;}
-    50% { mix-blend-mode: difference;
+    50% { 
+    	/*mix-blend-mode: difference;*/
         color: #00f800;
         border-color: #00f800;}
 
 
-    60% { mix-blend-mode: exclusion;
+    60% { 
+    	/*mix-blend-mode: exclusion;*/
         color: #8109d1;
         border-color: #8109d1;}
-    70% { mix-blend-mode: exclusion;
+    70% { 
+    	/*mix-blend-mode: exclusion;*/
         color: #8109d1;
         border-color: #8109d1;}
 
-    80% { mix-blend-mode: overlay;
+    80% { 
+    	/*mix-blend-mode: overlay;*/
         color: #FFFFFF;
         border-color: #FFFFFF;}
-    90% { mix-blend-mode: overlay;
+    90% { 
+    	/*mix-blend-mode: overlay;*/
         color: #FFFFFF;
         border-color: #FFFFFF;}
 
-    100% { mix-blend-mode: color-dodge;
+    100% { 
+    	/*mix-blend-mode: color-dodge;*/
         color: #ecff98;
         border-color: #ecff98;}
 }
