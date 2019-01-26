@@ -5,9 +5,12 @@
 <!-- include header -->
 
 <div class="body">
-  <div class="background" > <!-- slide -->
-    <p class="menutitle">News & Promotions</p>
-    <img id="slide" onMouseover="stopShow()" onMouseout="runShow()">
+  <div class="slideholder">
+		<div id="box">
+			<img src="../img/a1.jpg" alt="">
+		</div>
+		<p onclick="previmage()" type="button" name="button" class="leftbut"><</p>
+		<p onclick="imagenext()" type="button" name="button" class="rightbut">></p>
   </div>
   <div class="blockcontain">
     <div class="center">

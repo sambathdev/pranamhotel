@@ -4,6 +4,9 @@
   height: var(--navheight);
   width: 100%;
   float: left;
+  position: absolute;
+  z-index: 1;
+
 }
 #logo{
   height: var(--navheight);

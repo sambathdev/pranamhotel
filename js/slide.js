@@ -1,30 +1,25 @@
-var i = 0;
-var timer;
-var path = [];
-
-path[0] = "https://picsum.photos/800/600?image=1060";
-path[1] = "https://picsum.photos/800/600?image=1061";
-path[2] = "https://picsum.photos/800/600?image=1062";
-path[3] = "https://picsum.photos/800/600?image=1063";
-
-function changeImage(){
-    document.getElementById("slide").src=path[i];
-
-    if(i < path.length - 1){
-        i++;
-    }else {
-        i = 0;
-    }
-
-    timer = setTimeout("changeImage()", 10000);
+var slideindex = document.getElementById("box");
+var image1 = [ '../img/a2.jpg', '../img/a3.jpg', '../img/a1.jpg'];
+var i = image.length;
+function imagenext()
+{
+  if (i<image1.length)
+  {
+    i=i+1;
+  }
+  else{
+    i=1;
+  }
+  slideindex.innerHTML="<img src="+"\""+image1[i-1]+"\""+">";
 }
-
-  function stopShow(){
-      clearTimeout(timer);
+function previmage()
+{
+  if (i<image1.length+1 && i>1)
+  {
+    i = i-1;
   }
-
-  function runShow() {
-      changeImage();
+  else {
+    i = image1.length;
   }
-
-   window.onload = runShow;
+  slideindex.innerHTML="<img src="+"\""+image1[i-1]+"\""+">";
+}
