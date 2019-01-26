@@ -12,6 +12,7 @@
 		<p onclick="previmage()" type="button" name="button" class="leftbut"><</p>
 		<p onclick="imagenext()" type="button" name="button" class="rightbut">></p>
   </div>
+  <h1 class="pagetitle">News & Promotions</h1>
   <div class="blockcontain">
     <div class="center">
       <div class="makegrid">

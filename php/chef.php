@@ -13,7 +13,7 @@
   		</div>
 
       <div class="chef">
-        <h1>MEET OUR CHEF</h1>
+        <h1 class="pagetitle">MEET OUR CHEF</h1>
         <div class="center">
           <div class="onechefblock">
             <img src="../img/chef1.jpg" alt="">

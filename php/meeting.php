@@ -1,46 +1,19 @@
 <?php
-  define('TITLE', 'Chef');
+  define('TITLE', 'Meeting And Event');
   include('../html/template/header.html');
 ?>
 <!-- include header -->
     <div class="body">
-      <div class="slideholder">
+      <div class="slideholder" onloadstart="imagenext()">
   			<div id="box">
   				<img src="../img/a1.jpg" alt="">
   			</div>
   			<p onclick="previmage()" type="button" name="button" class="leftbut"><</p>
   			<p onclick="imagenext()" type="button" name="button" class="rightbut">></p>
   		</div>
-
-      <div class="chef">
-        <h1>MEET OUR CHEF</h1>
-        <div class="center">
-          <div class="onechefblock">
-            <img src="../img/chef1.jpg" alt="">
-            <div class="chefdescription">
-              <h4>ANANTARA RIVERSIDE</h4><br>
-              <p> <span> <b>LUNCH</b> </span> MONDAY TO SUNDAY: 12:00PM - 2:30PM</p>
-              <p> <span> <b>DINNER</b> </span> MONDAY TO SUNDAY: 12:00PM - 2:30PM</p>
-              <p> <span> <b>SATURDAY:</b> </span> 12:00PM - 3:00PM</p>
-              <p> <span> <b>BRUNCH</b> </span></p>
-
-            </div>
-          </div>
-          <div class="onechefblockodd">
-            <img src="../img/chef1.jpg" alt="">
-            <div class="chefdescriptionodd">
-              <h4>ANANTARA RIVERSIDE</h4><br>
-              <p> <span> <b>LUNCH</b> </span> MONDAY TO SUNDAY: 12:00PM - 2:30PM</p>
-              <p> <span> <b>DINNER</b> </span> MONDAY TO SUNDAY: 12:00PM - 2:30PM</p>
-              <p> <span> <b>SATURDAY:</b> </span> 12:00PM - 3:00PM</p>
-              <p> <span> <b>BRUNCH</b> </span></p>
-
-            </div>
-          </div>
+      <h1 class="pagetitle">Meeting And Event</h1>
 
 
-        </div>
-      </div>
 
 
     </div> <!-- end body div =============== -->

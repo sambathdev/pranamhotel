@@ -5,17 +5,7 @@
 
 }
 
-.chef h1{
-  text-align: center;
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-size: 50px;
-  line-height: 100px;
-  display: block;
-  width: 500px;
-  border-bottom: 2px var(--titlemenu) solid;
-}
+
 
 .chef img{
   width: 60%;
