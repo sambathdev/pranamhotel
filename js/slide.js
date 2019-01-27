@@ -12,7 +12,7 @@ function imagenext()
     i=1;
   }
   slideindex.innerHTML="<img src="+"\""+image1[i-1]+"\""+">";
-  setTimeout(imagenext,5000);
+  setTimeout(imagenext,10000);
 }
 
 function previmage()

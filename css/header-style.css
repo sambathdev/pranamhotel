@@ -51,6 +51,9 @@ nav ul li a {
     text-align: center;
 
 }
+nav ul li:first-child a{
+  display: none;
+}
 
 nav ul li a::after {
     content: '';
@@ -93,6 +96,81 @@ nav ul ul a:hover {
     transition: 150ms;
     border-left: 5px black solid;
 }
+.hamburger{
+  font-size: 40px !important;
+}
+
+@media screen and (max-width: 1200px){
+  nav ul ul a{
+      font-size: 14px !important ;
+  }
+  nav ul li a {
+    font-size: 14px !important;
+  }
+  .center{
+    max-width: 1000px !important;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  nav ul ul a{
+      font-size: 11px !important;
+  }
+  nav ul li a {
+    font-size: 11px !important;
+  }
+  .center{
+    max-width: 800px !important;
+  }
+}
+
+@media screen and (max-width: 800px){
+  nav ul ul a{
+      font-size: 11px !important;
+  }
+  nav ul li a {
+    font-size: 11px !important;
+  }
+  .center{
+    max-width: 800px !important;
+  }
+  nav ul li a{
+    display: none;
+  }
+
+  nav ul li:first-child a{
+    display: block;
+  }
+
+  .respon li a{
+    display: block !important;
+  }
+  .respon li{
+    float: none;
+  }
+  .respon{
+    position: fixed;
+    right: 0px;
+  }
+  .respon a{
+    font-size: 20px !important;
+    text-align: left;
+    padding: 0 10px 0 10px;
+  }
+  .respon a:hover{
+    border-bottom: 1px black solid;
+  }
+  .respon ul{
+    position: absolute;
+    right: 200px;
+    top: -5px;
+  }
+  .hamburger{
+    font-size: 40px !important;
+    text-align: right !important;
+  }
 
 
+
+}
 ;
