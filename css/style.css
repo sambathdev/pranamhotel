@@ -38,3 +38,7 @@ body{
   width: 500px;
   border-bottom: 2px var(--titlemenu) solid;
 }
+.indexbody{
+	float: left;
+	margin-top: 60px;
+}
