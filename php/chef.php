@@ -5,11 +5,11 @@
 <!-- include header -->
     <div class="body">
       <div class="slideholder">
-  			<div id="box">
+  			<div id="boxchef">
   				<img src="../img/a1.jpg" alt="">
   			</div>
-  			<p onclick="previmage()" type="button" name="button" class="leftbut"><</p>
-  			<p onclick="imagenext()" type="button" name="button" class="rightbut">></p>
+  			<p onclick="previmagechef()" type="button" name="button" class="leftbut"><</p>
+  			<p onclick="imagenextchef()" type="button" name="button" class="rightbut">></p>
   		</div>
 
       <div class="chef">

@@ -1,8 +1,7 @@
-var slideindex = document.getElementById("box");
+var slideindex = document.getElementById("boxchef");
 var image1 = [ '../img/a2.jpg', '../img/a3.jpg', '../img/a1.jpg'];
 var i = image.length;
-imagenext();
-function imagenext()
+function imagenextchef()
 {
   if (i<image1.length)
   {
@@ -15,7 +14,7 @@ function imagenext()
   setTimeout(imagenext,10000);
 }
 
-function previmage()
+function previmagechef()
 {
   if (i<image1.length+1 && i>1)
   {

@@ -1,10 +1,10 @@
 
-#box{
+#boxchef{
 	width: 100%;
 	overflow: hidden;
 	
 }
-#box img{
+#boxchef img{
 	width: 100%;
 
 }
@@ -12,6 +12,7 @@
 	position: relative;
 	width: 100%;
 	float: left;
+  margin-top: 60px;
 	
 	
 	
