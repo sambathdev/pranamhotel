@@ -1,11 +1,11 @@
 <?php
-  define('TITLE','your page title');
+  define('TITLE','premier room');
   include('../html/template/header.html');
 ?>
 
 <div class="indexbody">
   <!-- write your html here -->
-  <p>start here</p>
+  <p class="titless">premier room</p>
   <p>start here2</p>
 
 
