@@ -1,5 +1,5 @@
 <?php
-  define('TITLE','premier room');
+  define('TITLE','Accommadation');
   include('../html/template/header.html');
 ?>
 
