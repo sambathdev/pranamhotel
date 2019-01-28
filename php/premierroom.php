@@ -6,7 +6,7 @@
 <div class="indexbody">
   <!-- write your html here -->
   <p class="titless">premier room</p>
-  <p>Dara Start Hear2</p>
+  <p>Dara Start Heakr2</p>
 
 
 
