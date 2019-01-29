@@ -1,0 +1,38 @@
+.menueuropefood {
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 50px;
+}
+
+.block {
+	float: left;
+	margin-left: 50px;
+	margin-top: 20px;
+	width: 400px;
+	border: 1px solid brown;
+}
+
+
+.f2 {
+	margin-top:8px;
+	text-align: center;
+}
+
+.z3 {
+	float: left;
+	width: 400px;
+	height: 300px;
+	margin-right: 10px;
+}
+
+.m1 {
+	width: 100%;
+	height: 90%;
+}
+
+.food {
+	text-align: center;
+	margin-top: 50px;
+	Font-size: 50px;
+	color: brown;
+}
