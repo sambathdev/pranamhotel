@@ -16,21 +16,46 @@
             <p>Give your dad the meal he deserves for Father’s Day! Treat the old man to a hearty and happy meal at one of his favourite restaurants on Father’s Day. Whether your dad loves a heavy Grand Brunch Buffet or a Dim Sum-filled feast, JW Marriott Hotel Bangkok with great Father’s […]</p>
           </div>
           <a href="#">More</a>
-
-
         </div>
         <div class="block">
-          <p>2</p>
+          <img src="../img/room/premierroom2.jpg" alt="">
+          <div class="describtion">
+            <h1>BOND WITH DAD AT JW MARRIOTT HOTEL BANGKOK</h1>
+            <p>Give your dad the meal he deserves for Father’s Day! Treat the old man to a hearty and happy meal at one of his favourite restaurants on Father’s Day. Whether your dad loves a heavy Grand Brunch Buffet or a Dim Sum-filled feast, JW Marriott Hotel Bangkok with great Father’s […]</p>
+          </div>
+          <a href="#">More</a>
         </div>
         <div class="block">
-          <p>3</p>
-          <p>3</p>
-          <p>3</p>
-          <p>3</p>
-          <p>3</p>
+          <img src="../img/wellness/camille-kmile-1120204-unsplash.jpg" alt="">
+          <div class="describtion">
+            <h1>BOND WITH DAD AT JW MARRIOTT HOTEL BANGKOK</h1>
+            <p>Give your dad the meal he deserves for Father’s Day! Treat the old man to a hearty and happy meal at one of his favourite restaurants on Father’s Day. Whether your dad loves a heavy Grand Brunch Buffet or a Dim Sum-filled feast, JW Marriott Hotel Bangkok with great Father’s […]</p>
+          </div>
+          <a href="#">More</a>
         </div>
         <div class="block">
-          <p>4</p>
+          <img src="../img/wellness/https___blueprint-api-production.s3.amazonaws.com_uploads_card_image_171914_EVEN.jpg" alt="">
+          <div class="describtion">
+            <h1>BOND WITH DAD AT JW MARRIOTT HOTEL BANGKOK</h1>
+            <p>Give your dad the meal he deserves for Father’s Day! Treat the old man to a hearty and happy meal at one of his favourite restaurants on Father’s Day. Whether your dad loves a heavy Grand Brunch Buffet or a Dim Sum-filled feast, JW Marriott Hotel Bangkok with great Father’s […]</p>
+          </div>
+          <a href="#">More</a>
+        </div>
+        <div class="block">
+          <img src="../img/wellness/ZOLK2SVVJRFJRGVFBFBSOOLGS4.jpg" alt="">
+          <div class="describtion">
+            <h1>BOND WITH DAD AT JW MARRIOTT HOTEL BANGKOK</h1>
+            <p>Give your dad the meal he deserves for Father’s Day! Treat the old man to a hearty and happy meal at one of his favourite restaurants on Father’s Day. Whether your dad loves a heavy Grand Brunch Buffet or a Dim Sum-filled feast, JW Marriott Hotel Bangkok with great Father’s […]</p>
+          </div>
+          <a href="#">More</a>
+        </div>
+        <div class="block">
+          <img src="../img/meeting/7272_sm_05_p_2048x1536.jpg" alt="">
+          <div class="describtion">
+            <h1>BOND WITH DAD AT JW MARRIOTT HOTEL BANGKOK</h1>
+            <p>Give your dad the meal he deserves for Father’s Day! Treat the old man to a hearty and happy meal at one of his favourite restaurants on Father’s Day. Whether your dad loves a heavy Grand Brunch Buffet or a Dim Sum-filled feast, JW Marriott Hotel Bangkok with great Father’s […]</p>
+          </div>
+          <a href="#">More</a>
         </div>
       </div>
     </div> <!-- end center =============== -->
