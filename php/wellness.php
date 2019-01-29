@@ -1,12 +1,11 @@
 <?php
-  define('TITLE','Wellness');
+  define('TITLE','Gym');
   include('../html/template/header.html');
 ?>
 
 <div class="indexbody">
   <!-- write your html here -->
-  <p>start here</p>
-  <p>start here2</p>
+  <img src="../img/wellness/camille-kmile-1120204-unsplash.jpg" alt="">
 
 
 
