@@ -51,7 +51,7 @@ nav ul li a {
     text-align: center;
 
 }
-nav ul li:first-child a{
+.hamburger{
   display: none;
 }
 
@@ -138,7 +138,7 @@ nav ul ul a:hover {
     display: none;
   }
 
-  nav ul li:first-child a{
+  .hamburger{
     display: block;
   }
 
