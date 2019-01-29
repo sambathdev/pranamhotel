@@ -1,12 +1,12 @@
 <?php
-  define('TITLE','Exexcutive Room');
+  define('TITLE','Pool');
   include('../html/template/header.html');
 ?>
 
 <div class="indexbody">
   <!-- write your html here -->
-  <p class="titless">premier room</p>
-  <p>Dara Start Hear2</p>
+  <p>start here</p>
+  <p>start here2</p>
 
 
 
