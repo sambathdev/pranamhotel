@@ -23,7 +23,7 @@ body{
 .body{
   float: left;
   width: 100%;
-  
+  margin-top: 60px;
   z-index: -1;
 }
 
@@ -41,4 +41,5 @@ body{
 .indexbody{
 	float: left;
 	margin-top: 60px;
+  	width: 100%;
 }
