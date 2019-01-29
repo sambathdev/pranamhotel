@@ -71,14 +71,14 @@
 <td></td>
 <td>
 	<h2>
-		Contact Us
+		Contact 
 </h2>
 	<p>
 		<strong><br />Call Us</strong>
 	</p>
 	<p>
         +855 67 666 067<br/>
-        +855 17 506 244<br/>
+        +855 17 666 067<br/>
         +855 70 666 067<br/>
 		Monday to Sunday from 8 a.m. – 10 p.m. Eastern Time. Holiday hours may vary. 
 	</p>
