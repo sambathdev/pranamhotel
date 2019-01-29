@@ -5,6 +5,13 @@
 
 <div class="indexbody">
   <!-- write your html here -->
+  <div class="slideholder">
+    <div id="boxchef">
+      <img src="../img/room/RCDUBIF_00192.jfif" alt="">
+    </div>
+    <p onclick="previmagechef()" type="button" name="button" class="leftbut"><</p>
+    <p onclick="imagenextchef()" type="button" name="button" class="rightbut">></p>
+  </div>
   <div class="bbcocontain">
     <div class="center">
       <div class="bbcodes">

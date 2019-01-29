@@ -4,13 +4,7 @@
 ?>
 <!-- include header -->
     <div class="body">
-      <div class="slideholder">
-  			<div id="boxchef">
-  				<img src="../img/a1.jpg" alt="">
-  			</div>
-  			<p onclick="previmagechef()" type="button" name="button" class="leftbut"><</p>
-  			<p onclick="imagenextchef()" type="button" name="button" class="rightbut">></p>
-  		</div>
+
 
       <div class="chef">
         <h1 class="pagetitle">MEET OUR CHEF</h1>

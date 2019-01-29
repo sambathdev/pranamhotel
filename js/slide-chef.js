@@ -1,5 +1,5 @@
 var slideindex = document.getElementById("boxchef");
-var image1 = [ '../img/a2.jpg', '../img/a3.jpg', '../img/a1.jpg'];
+var image1 = [ '../img/chef/slide.jpg', '../img/chef/slide2.jpg', '../img/room/premier-king-1.jpg'];
 var i = image.length;
 function imagenextchef()
 {
