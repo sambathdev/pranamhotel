@@ -71,7 +71,7 @@
 <td></td>
 <td>
 	<h2>
-		Contact 
+		Contact Us
 </h2>
 	<p>
 		<strong><br />Call Us</strong>
