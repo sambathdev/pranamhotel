@@ -11,25 +11,12 @@
 		#contactForm .heading{color:red; font-weight:bold; font-size:130%}
 		#contactForm h4{color:#CC3784;line-height: 1em;padding-bottom: 1em;padding-top: 1em;}
 	</style>
+<table>
+	<td>
 	<h2>
-		Contact Us
+		Get In Touch
 	</h2>
-	<p>
-		<strong><br />Call Us</strong>
-	</p>
-	<p>
-        +855 67 666 067<br/>
-        +855 17 506 244<br/>
-        +855 70 666 067<br/>
-		Monday to Sunday from 8 a.m. – 10 p.m. Eastern Time. Holiday hours may vary. 
-	</p>
-	<p>
-		<strong><br />Email Us</strong>
-	</p>
-	<p>
-		<a href="https://Contacts.pranomhotel@gmail.com" target="_blank">contacts.pranomhotel@gmail.com</a>
-	</p>
-	<br />
+	<br/>
 	<p>
 		Please complete all fields below.
 	</p>
@@ -71,15 +58,48 @@
 			<div id="custSer_comments_err" class="input-error"></div>
 		</div>
 		<div class="contactus-privacy-statement">
-			<p>We care about your privacy and want you to be informed about our practices. Review our privacy statement for full details on how we use and protect information.<p>
+			<p><font size="2">We care about your privacy and want you to be informed about our practices.<br/> Review our privacy statement for full details on how we use and protect information.</font><p>
 		</div>
 		<div class="form-group">
 			<button id="contactUsSubmit" title="Click To Submit" class="btn btn-primary" type="submit">Submit</button>
 		</div>
 	</form>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+	<h2>
+		Contact Us
+</h2>
+	<p>
+		<strong><br />Call Us</strong>
+	</p>
+	<p>
+        +855 67 666 067<br/>
+        +855 17 506 244<br/>
+        +855 70 666 067<br/>
+		Monday to Sunday from 8 a.m. – 10 p.m. Eastern Time. Holiday hours may vary. 
+	</p>
+	<p>
+		<strong><br />Email Us</strong>
+	</p>
+	<p>
+		<a href="https://Contacts.pranomhotel@gmail.com" target="_blank">contacts.pranomhotel@gmail.com</a>
+	</p>
+	<p>
+		<strong><br/>Visit Our Site</strong>
+</P>
+Vattanac Capital Tower, No. 66, Preah Monivong Blvd, Sangkat Wat Phnom,<br/> Khan Daun Penh, Phnom Penh, Kingdom of Cambodia., Daun Penh, Phnom Penh, Cambodia
+	<p>
+		<strong><br/>Find Us On Facebook</strong>
+<p>
+	<p> 
+		<a href="www.facebook.com/pranomhotel" target="_blank">www.facebook.com/pranomhotel</a>
 
-
-
+</td>
+</table>
 
 
 </div>
