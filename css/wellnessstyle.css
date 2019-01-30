@@ -1,10 +1,11 @@
 #introPic {
-    width: 40%;
+    width: 30%;
     height: 30%;
 
 }
 #firstBlock {
-    width: 30%;
+    width: 100%;
+    height: auto;
     margin: 10px;
     margin-left: 16%;
     
@@ -12,10 +13,18 @@
 #firstBlock > img {
     float :left;
 }
+#firstBlock > h1 {
+    padding: 1%;
+	width: 50%;
+    float: left;
+    
+}
 #firstBlock > p {
+    padding-left: 1%;
+	width: 30%;
     text-align: left;
     float: left;
-    margin: 10px;
+    
 }
 * {box-sizing:border-box}
 

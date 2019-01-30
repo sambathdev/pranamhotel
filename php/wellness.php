@@ -40,9 +40,8 @@
 
   <div id="firstBlock">
     <img id="introPic" src="../img/wellness/camille-kmile-1120204-unsplash.jpg" alt="">
-    <p>High Qualities Shampoo </p> <br>
-    <p>Comfortable Towel</p> <br>
-    <p>High tech spa facilities</p>
+    <h1>High Qualities Shampoo </h1> <br> <br>
+    <p>Testers of all hair types adored this shampoo’s super-soft finish and subtle rose scent, though those with oily hair found that they had to wash more frequently. Gentle surfactants that will get your hair clean, but not so many moisturizing ingredients that it will be weighed down this shampoo left testers’ oily hair feeling light and refreshed. This shampoo was recently recommended to me and I haven't used anything else since. It gently cleans my hair without making it super dry. As for my conditioner, I use this mask from the same collection. A tiny bit each time I wash goes a long way and keeps my hair extra hydrated.</p>
   </div>
   <script>
 var slideIndex = 1;
@@ -56,21 +55,6 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
 
 
 function showSlides() {
@@ -82,7 +66,7 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1} 
   slides[slideIndex-1].style.display = "block"; 
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
+  setTimeout(showSlides, 9000); // Change image every 2 seconds
 }
 </script>
 </div>
