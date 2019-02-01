@@ -1,6 +1,6 @@
 <?php
   define('TITLE','History');
-  include('../html/template/header.html');
+  include('../../html/template/header.html');
 ?>
 
 <div class="indexbody">
@@ -52,5 +52,5 @@ src="/wp-content/uploads/2016/01/History.jpg" alt="Grande Colonial Exterior at N
 </div>
 
 <?php
-include('../html/template/footer.html');
+include('../../html/template/footer.html');
  ?>

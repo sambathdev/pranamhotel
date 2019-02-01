@@ -1,6 +1,6 @@
 <?php
   define('TITLE','Contact Us');
-  include('../html/template/header.html');
+  include('../../html/template/header.html');
 ?>
 
 <div class="indexbody">
@@ -42,7 +42,7 @@
 			<label id="labelCountry" for="custSer_country">Country</label>
 			<input id="custSer_country" name="custSer_country" class="form-control" aria-describedby="emailHelp" placeholder="Enter Country" type="text">
 			<div id="custSer_country_err" class="input-error"></div -->
-		
+
 		<br/>
 			<label id="labelPhone" for="custSer_phone"><strong>Phone#</strong></label>
 			<input id="custSer_phone" name="custSer_phone" class="form-control" aria-describedby="emailHelp" placeholder="Enter Phone#" type="tel">
@@ -80,7 +80,7 @@
         +855 67 666 067<br/>
         +855 17 666 067<br/>
         +855 70 666 067<br/>
-		Monday to Sunday from 8 a.m. – 10 p.m. Eastern Time. Holiday hours may vary. 
+		Monday to Sunday from 8 a.m. – 10 p.m. Eastern Time. Holiday hours may vary.
 	</p>
 	<p>
 		<strong><br />Email Us</strong>
@@ -95,7 +95,7 @@ Vattanac Capital Tower, No. 66, Preah Monivong Blvd, Sangkat Wat Phnom,<br/> Kha
 	<p>
 		<strong><br/>Find Us On Facebook</strong>
 <p>
-	<p> 
+	<p>
 		<a href="www.facebook.com/pranamhotel" target="_blank">www.facebook.com/pranamhotel</a>
 
 </td>
@@ -105,5 +105,5 @@ Vattanac Capital Tower, No. 66, Preah Monivong Blvd, Sangkat Wat Phnom,<br/> Kha
 </div>
 
 <?php
-include('../html/template/footer.html');
+include('../../html/template/footer.html');
  ?>

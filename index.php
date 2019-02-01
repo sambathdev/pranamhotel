@@ -1,17 +1,10 @@
 <?php
   define('TITLE','Pranam Hotel');
-  include('../html/template/header.html');
+  include('html/template/header.html');
 ?>
 
 <div class="indexbody">
   <!-- write your html here -->
-  <div class="slideholder">
-    <div id="boxchef">
-      <img src="../img/room/RCDUBIF_00192.jfif" alt="">
-    </div>
-    <p onclick="previmagechef()" type="button" name="button" class="leftbut"><</p>
-    <p onclick="imagenextchef()" type="button" name="button" class="rightbut">></p>
-  </div>
   <div class="bbcocontain">
     <div class="center">
       <div class="bbcodes">
@@ -20,7 +13,7 @@
         <p>An upscale casual dine – in and to-go bakery offering fresh baked goods, breakfast sandwiches, omelets, coffee, Teas, fresh fruit smoothies, specialty sandwiches, salads, soups, bowls, cheesecake and more. In 2018, BBCO expand its alfresco area so call “BBCO Terrace” in aiming to provide a new dining experience to guests.</p>
       </div>
       <div class="bbcoimg">
-        <img src="../img/chef/breakfast.jpg" alt="">
+        <img src="img/chef/breakfast.jpg" alt="">
       </div>
     </div>
   </div>
@@ -43,17 +36,17 @@
   <div class="otherindex">
     <div class="center">
       <div class="col1">
-        <img src="../img/chef/col1.jpg" alt="">
+        <img src="img/chef/col1.jpg" alt="">
         <h1>We Offer ...</h1>
         <p>BBCO offers an array of products tailored to the “on the go” professional with an active and urban lifestyle. With a combination of “local flare”, and gourmet selection, products include fresh grab and go, organic foods, packaged beer and wine, chilled beverages, frozen yogurt, cakes, cookies and cupcakes, artesian chocolate, toffee, snacks and signature customized 3D cake. Our commitment to excellence is exhibited through sourcing the highest quality products and delivering exceptional service and create guests experience.</p>
       </div>
       <div class="col2">
         <h1>The Terrace</h1>
         <p>With the aim to creating new experience, BBCO offering a new unique outdoor dining experience and we name it “BBCO Terrace”.</p>
-        <img src="../img/chef/terrace.png" alt="">
+        <img src="img/chef/terrace.png" alt="">
       </div>
       <div class="col3">
-        <img src="../img/room/deluxe.jfif" alt="">
+        <img src="img/room/deluxe.jfif" alt="">
         <h4>Room Feature</h4>
         <p>33sqm/355sqft</p>
         <p>Air Conditioned</p>
@@ -66,9 +59,6 @@
 
 
 
-
-
-
       </div>
     </div>
   </div>
@@ -78,5 +68,5 @@
 </div>
 
 <?php
-include('../html/template/footer.html');
+include('html/template/footer.html');
  ?>

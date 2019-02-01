@@ -1,6 +1,6 @@
 <?php
-  define('TITLE','Special Offer');
-  include('../html/template/header.html');
+  define('TITLE','Massage & Spa');
+  include('../../html/template/header.html');
 ?>
 
 <div class="indexbody">
@@ -14,5 +14,5 @@
 </div>
 
 <?php
-include('../html/template/footer.html');
+include('../../html/template/footer.html');
  ?>

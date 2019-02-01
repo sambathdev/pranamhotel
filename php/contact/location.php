@@ -1,6 +1,6 @@
 <?php
   define('TITLE','Location');
-  include('../html/template/header.html');
+  include('../../html/template/header.html');
 ?>
 
 <div class="indexbody">
@@ -13,5 +13,5 @@
 </div>
 
 <?php
-include('../html/template/footer.html');
+include('../../html/template/footer.html');
  ?>

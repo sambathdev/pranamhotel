@@ -1,6 +1,6 @@
 <?php
   define('TITLE', 'Chef');
-  include('../html/template/header.html');
+  include('../../html/template/header.html');
 ?>
 <!-- include header -->
     <div class="body">
@@ -10,7 +10,7 @@
         <h1 class="pagetitle">MEET OUR CHEF</h1>
         <div class="center">
           <div class="onechefblock">
-            <img src="../img/chef1.jpg" alt="">
+            <img src="../../img/chef1.jpg" alt="">
             <div class="chefdescription">
               <h4>ANANTARA RIVERSIDE</h4><br>
               <p> <span> <b>LUNCH</b> </span> MONDAY TO SUNDAY: 12:00PM - 2:30PM</p>
@@ -21,7 +21,7 @@
             </div>
           </div>
           <div class="onechefblockodd">
-            <img src="../img/chef1.jpg" alt="">
+            <img src="../../img/chef1.jpg" alt="">
             <div class="chefdescriptionodd">
               <h4>ANANTARA RIVERSIDE</h4><br>
               <p> <span> <b>LUNCH</b> </span> MONDAY TO SUNDAY: 12:00PM - 2:30PM</p>
@@ -44,5 +44,5 @@
 
 <!-- include footer -->
 <?php
-  include('../html/template/footer.html');
+  include('../../html/template/footer.html');
 ?>
