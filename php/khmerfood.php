@@ -55,7 +55,7 @@
   <div class="block">
 		<figure class="z2">
 			<img class="m1" src="../img/khmerfood/pic18.jpg" alt="bay cha"/>
-			<figcaption class="f1">Terk Krerng</figcaption>
+			<figcaption class="f1">Terk Trey Pa'em</figcaption>
 		</figure>
   </div>
   </div>
