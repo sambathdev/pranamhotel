@@ -42,20 +42,20 @@
   </div>
   <div class="block">
 		<figure class="z2">
-			<img class="m1" src="../../img/khmerfood/pic15.jpg" alt="bay cha"/>
+			<img class="m1" src="../../img/khmerfood/pic15.jpg"/>
 			<figcaption class="f1">Prahok Ktis</figcaption>
 		</figure>
   </div>
   <div class="block">
 		<figure class="z2">
-			<img class="m1" src="../../img/khmerfood/pic17.jpg" alt="bay cha"/>
+			<img class="m1" src="../../img/khmerfood/pic17.jpg"/>
 			<figcaption class="f1">Noodle Soup</figcaption>
 		</figure>
   </div>
   <div class="block">
 		<figure class="z2">
-			<img class="m1" src="../../img/khmerfood/pic18.jpg" alt="bay cha"/>
-			<figcaption class="f1">Terk Krerng</figcaption>
+			<img class="m1" src="../../img/khmerfood/pic18.jpg"/>
+			<figcaption class="f1">Terk Trey Pa'em</figcaption>
 		</figure>
   </div>
   </div>

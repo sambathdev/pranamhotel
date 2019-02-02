@@ -26,7 +26,7 @@
 		<h2 class="hh">Business Dinner Meeting</h2>
 		<p class="hh">Our facilities are specifically designed to accommodate everything from small private
 		business lunches to world-class conferences in our dedicated Ballroom where there is
-		room for up to 20 seated guests</p>
+		room for up to 20 seated guests.</p>
 	</figure>
 	</div>
 	<div class="block1">
