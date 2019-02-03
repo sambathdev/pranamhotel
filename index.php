@@ -3,12 +3,36 @@
   include('html/template/header.html');
 ?>
 
+<?php
+  if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    if ( (!empty($_POST['username'])) && (!empty($_POST['password'])) ) {
+      if($_POST['username']  == 'gg@g' && $_POST['password'] == '123'){
+        session_start();
+        $_SESSION['username'] = $_POST['username'];
+  			$_SESSION['success'] = "You are now logged in";
+  			header('location: welcome.php');
+        ob_end_clean();
+      }else{
+
+        print '<p>wrong username and password</p>';
+      }
+    }
+  }
+?>
+
 <div class="indexbody">
   <!-- write your html here -->
+  <div class="">
+    <h1 style="text-align:center;">Welcome To Pranam Hotel</h1>
+    <h1 style="text-align:center;"><?php
+    if(isset($_SESSION['username']))
+      print $_SESSION['username'].', you are logined';
+    ?></h1>
+  </div>
   <div class="bbcocontain">
     <div class="center">
       <div class="bbcodes">
-        <h1>Breakfast</h1>
+        <h1>Breakfast </h1>
         <h4>Operation Hours: 06:00 am – 10:30 pm (daily)</h4>
         <p>An upscale casual dine – in and to-go bakery offering fresh baked goods, breakfast sandwiches, omelets, coffee, Teas, fresh fruit smoothies, specialty sandwiches, salads, soups, bowls, cheesecake and more. In 2018, BBCO expand its alfresco area so call “BBCO Terrace” in aiming to provide a new dining experience to guests.</p>
       </div>
