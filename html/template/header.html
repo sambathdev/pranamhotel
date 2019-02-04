@@ -338,6 +338,15 @@
               </ul>
             </li>
             <li><a href="#"> <i class="fas fa-search"></i></a></li>
+            <li><?php
+              if(isset($_SESSION['username'])){
+                echo '<form action="../login/logout.php" method="post">
+                         <button type="submit" name="logout-submit">Logout</button>
+                      </form>';
+              }
+            ?></li>
+            
+
           </ul>
         </nav>
 

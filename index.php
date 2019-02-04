@@ -1,32 +1,34 @@
 <?php
   define('TITLE','Pranam Hotel');
   include('html/template/header.html');
-?>
 
-<?php
   if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    if ( (!empty($_POST['username'])) && (!empty($_POST['password'])) ) {
-      if($_POST['username']  == 'gg@g' && $_POST['password'] == '123'){
+    if( (!empty($_POST['username'])) && (!empty($_POST['password'])) ){
+      if( ($_POST['username'] == 'ggh') && ($_POST['password'] == '123') ){
         session_start();
         $_SESSION['username'] = $_POST['username'];
-  			$_SESSION['success'] = "You are now logged in";
-  			header('location: welcome.php');
-        ob_end_clean();
-      }else{
+        $_SESSION['time'] = date('Y');
 
-        print '<p>wrong username and password</p>';
       }
     }
   }
+
 ?>
+
+
 
 <div class="indexbody">
   <!-- write your html here -->
   <div class="">
     <h1 style="text-align:center;">Welcome To Pranam Hotel</h1>
     <h1 style="text-align:center;"><?php
-    if(isset($_SESSION['username']))
-      print $_SESSION['username'].', you are logined';
+    if(isset($_SESSION['username'])){
+      print $_SESSION['username'].', you are logined at '.$_SESSION['time'];
+    } else{
+      header('location: php/login/login.php');
+      exit();
+    }
+
     ?></h1>
   </div>
   <div class="bbcocontain">
