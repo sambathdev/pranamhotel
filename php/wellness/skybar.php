@@ -1,5 +1,5 @@
 <?php
-  define('TITLE','Pranam Hotel');
+  define('TITLE','Pool');
   include('../../html/template/header.html');
 ?>
 
