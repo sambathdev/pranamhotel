@@ -109,3 +109,24 @@ form, .content {
 	border: 1px solid #3c763d;
 	margin-bottom: 20px;
 }
+
+
+.logintitle{
+	text-align: center !important;
+	color: red;
+	font-size: 50px;
+	line-height: 90px;
+}
+.logintitle1{
+	text-align: center !important;
+	color: red;
+	font-size: 30px;
+	line-height: 90px;
+}
+.welcomes{
+	text-align: center;
+	font-size: 25px;
+}
+.logout{
+	font-size: 50px;
+}
