@@ -1,4 +1,5 @@
 <?php
+  session_start();
   define('TITLE', 'News & Promotions');
   include('../../html/template/header.html');
 ?>

@@ -1,4 +1,5 @@
 <?php
+  session_start();
   define('TITLE','Pool');
   include('../../html/template/header.html');
 ?>

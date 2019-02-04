@@ -17,45 +17,15 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
-
-
     <?php
       if(defined('TITLE')){
         if(TITLE == 'Pranam Hotel'){
-          print '<link rel="stylesheet" href="css/header-style.css">';
-          print '<link rel="stylesheet" href="css/footer-style.css">';
-          print '<link rel="stylesheet" href="css/indexstyle.css">';
           print '<link rel="stylesheet" href="css/style.css">';
         }else{
-          print '<link rel="stylesheet" href="../../css/header-style.css">';
-          print '<link rel="stylesheet" href="../../css/footer-style.css">';
-          print '<link rel="stylesheet" href="../../css/historystyle.css">';
-          print '<link rel="stylesheet" href="../../css/chefstyle.css">';
-          print '<link rel="stylesheet" href="../../css/chefstyle.css">';
-          print '<link rel="stylesheet" href="../../css/contactstyle.css">';
-          print '<link rel="stylesheet" href="../../css/deluxeroomstyle.css">';
-          print '<link rel="stylesheet" href="../../css/europefoodstyle.css">';
-          print '<link rel="stylesheet" href="../../css/executiveroomstyle.css">';
-          print '<link rel="stylesheet" href="../../css/gymstyle.css">';
-          print '<link rel="stylesheet" href="../../css/indexstyle.css">';
-          print '<link rel="stylesheet" href="../../css/khmerfoodstyle.css">';
-          print '<link rel="stylesheet" href="../../css/massageandspastyle.css">';
-          print '<link rel="stylesheet" href="../../css/meetingandeventstyle.css">';
-          print '<link rel="stylesheet" href="../../css/poolstyle.css">';
-          print '<link rel="stylesheet" href="../../css/restaurantstyle.css">';
-          print '<link rel="stylesheet" href="../../css/wellnessstyle.css">';
-          print '<link rel="stylesheet" href="../../css/awardstyle.css">';
-          print '<link rel="stylesheet" href="../../css/newsandpromotionsstyle.css">';
           print '<link rel="stylesheet" href="../../css/style.css">';
-          print '<link rel="stylesheet" href="../../css/slidestyle.css">';
-          print '<link rel="stylesheet" href="../../css/premierroomstyle.css">';
-          print '<link rel="stylesheet" href="../../css/accommodationstyle.css">';
         }
       }
     ?>
-
-
   </head>
   <body>
     <div id="header">
@@ -301,15 +271,31 @@
             </li>
             <li><a href="
               <?php
+              if(isset($_SESSION['email'])) {
                 if(defined('TITLE')){
                   if(TITLE == 'Pranam Hotel'){
-                    print 'php/login/register.php';
+                    print 'php/login/logout.php';
+                  }else{
+                    print '../login/logout.php';
+                  }
+                }
+              }else{
+                if(defined('TITLE')){
+                  if(TITLE == 'Pranam Hotel'){
+                    print 'php/login/login.php';
                   }else{
                     print '../login/login.php';
                   }
                 }
+              }
               ?>
-            ">Book Now</a></li>
+            "> <?php
+              if(isset($_SESSION['email'])) {
+                print 'Log Out';
+              }else{
+                print 'Log In';
+              }
+            ?></a></li>
 
             <li><a href="#">More</a>
               <ul>
@@ -338,6 +324,15 @@
               </ul>
             </li>
             <li><a href="#"> <i class="fas fa-search"></i></a></li>
+            <li><?php
+              if(isset($_SESSION['username'])){
+                echo '<form action="../login/logout.php" method="post">
+                         <button type="submit" name="logout-submit">Logout</button>
+                      </form>';
+              }
+            ?></li>
+
+
           </ul>
         </nav>
 

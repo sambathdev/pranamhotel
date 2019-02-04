@@ -1,4 +1,5 @@
 <?php
+  session_start();
   define('TITLE','Contact Us');
   include('../../html/template/header.html');
 ?>

@@ -1,4 +1,5 @@
 <?php
+  session_start();
   define('TITLE','Europe Food');
   include('../../html/template/header.html');
 ?>
