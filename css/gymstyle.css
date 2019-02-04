@@ -1,0 +1,42 @@
+
+
+#welMes {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 70px;
+    font-family: "Lobster", serif;
+}
+
+.blog-container {
+    width: 100%;
+    padding-left: 5%;
+    margin-top: 10%;
+    float: left;
+}
+.pic-in-blog-left {
+    float: left;
+    width: 600px;
+}
+.pic-in-blog-right {
+    float: left;
+    width: 600px;
+}
+.preview-in-blog-right {
+    float: left;
+    width: 50%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3%;
+    margin-top: 1%;
+
+    
+}
+.preview-in-blog-left {
+    float: left;
+    width: 50%;
+    margin-right: 3%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1%;
+    
+}
