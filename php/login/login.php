@@ -14,19 +14,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 		if ( (strtolower($_POST['email']) == 'me@example.com') && ($_POST['password'] == 'testpass') ) { // Correct!
 			// Do session stuff:
+			date_default_timezone_set('Asia/Phnom_Penh');
 			session_start();
 			$_SESSION['email'] = $_POST['email'];
-			$_SESSION['loggedin'] = time();
+			$_SESSION['loggedin'] = date('l F j, Y h:i A');
 			// Redirect the user to the welcome page!
 			ob_end_clean(); // Destroy the buffer!
-			header ('Location: welcome.php');
+			header ('Location: ../../index.php');
 			exit();
 		} else { // Incorrect!
 
 			print '<p class="text--error">The submitted email address and password do not match those on file!<br>Go back and try again.</p>';
+			print '<a href="login.php"><p class = "loginagain">login again! </p></a>';
 		}
 	} else { // Forgot a field.
 		print '<p class="text--error">Please make sure you enter both an email address and a password!<br>Go back and try again.</p>';
+		print '<a href="login.php"><p class = "loginagain">login again! </p></a>';
 	}
 
 } else { // Display the form.

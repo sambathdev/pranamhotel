@@ -1,4 +1,5 @@
 <?php
+  session_start();
   define('TITLE', 'Meeting And Event');
   include('../../html/template/header.html');
 ?>

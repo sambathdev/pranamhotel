@@ -1,4 +1,5 @@
 <?php
+  session_start();
   define('TITLE','Special Offer');
   include('../../html/template/header.html');
 ?>

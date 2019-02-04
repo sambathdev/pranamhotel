@@ -1,5 +1,6 @@
 <?php
-  define('TITLE','Pool');
+  session_start();
+  define('TITLE','Skybar');
   include('../../html/template/header.html');
 ?>
 

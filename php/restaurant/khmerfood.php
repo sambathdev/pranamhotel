@@ -1,4 +1,5 @@
 <?php
+  session_start();
   define('TITLE','Khmer Food');
   include('../../html/template/header.html');
 ?>

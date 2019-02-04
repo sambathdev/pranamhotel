@@ -1,6 +1,8 @@
 <?php
+  session_start();
   define('TITLE','Pranam Hotel');
   include('html/template/header.html');
+
 ?>
 
 
@@ -8,7 +10,12 @@
 <div class="indexbody">
   <!-- write your html here -->
   <div class="">
-    <h1 style="text-align:center;">Welcome To Pranam Hotel </h1>
+    <h1 style="text-align:center;">Welcome To Pranam Hotel</h1>
+    <h1 style="text-align:center;"> <?php
+    if(isset($_SESSION['email']) && isset($_SESSION['loggedin'])) {
+            print 'Mr. '.$_SESSION['email'].', you are loged in at '.$_SESSION['loggedin'];
+    }
+    ?></h1>
   </div>
   <div class="bbcocontain">
     <div class="center">

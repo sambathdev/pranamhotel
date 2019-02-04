@@ -1,4 +1,5 @@
 <?php
+  session_start();
   define('TITLE','Premier Room');
   include('../../html/template/header.html');
 ?>
