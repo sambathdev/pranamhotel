@@ -94,18 +94,18 @@ body{
 	border-radius: 5px;
 }
 .error {
-	width: 92%; 
-	margin: 0px auto; 
-	padding: 10px; 
-	border: 1px solid #a94442; 
-	color: #a94442; 
-	background: #f2dede; 
-	border-radius: 5px; 
+	width: 92%;
+	margin: 0px auto;
+	padding: 10px;
+	border: 1px solid #a94442;
+	color: #a94442;
+	background: #f2dede;
+	border-radius: 5px;
 	text-align: left;
 }
 .success {
-	color: #3c763d; 
-	background: #dff0d8; 
+	color: #3c763d;
+	background: #dff0d8;
 	border: 1px solid #3c763d;
 	margin-bottom: 20px;
 }
@@ -718,6 +718,12 @@ nav ul ul a:hover {
 .col3 img{
 	width: 100%;
 }
+.welcomeindex{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 40px;
+  color: grey;
+}
 
 ;
 /*khmerfood----------------------------*/
@@ -941,7 +947,7 @@ div.desc button:hover{background-color:green;}
   width: 40%;
   margin-left: 3%;
   margin-top: 1%;
-  
+
 }
 .preview-wellness {
   float: left;
@@ -966,7 +972,7 @@ div.desc button:hover{background-color:green;}
 .header-in-blog {
   float: left;
   width: 100%;
-  margin-top: 2%;  
+  margin-top: 2%;
   margin-left: 0%;
   text-align: center;
 }
@@ -983,7 +989,7 @@ div.desc button:hover{background-color:green;}
   margin-top: 4%;
   padding-left: 0%;
 }
-  
+
 }
 * {box-sizing:border-box}
 
@@ -1046,12 +1052,12 @@ div.desc button:hover{background-color:green;}
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 /* Massage and spa */
@@ -1062,7 +1068,7 @@ div.desc button:hover{background-color:green;}
   margin-top: 2%;
   border-bottom: 3px solid #ad935d;
   line-height: 50px;
-  
+
 }
 .massage-blog-container {
   margin-top: 2%;
@@ -1077,7 +1083,7 @@ div.desc button:hover{background-color:green;}
   padding-bottom: 0%;
   display: block;
   float: left;
-  
+
 }
 .massage-header-in-blog {
   float: left;
@@ -1108,7 +1114,7 @@ div.desc button:hover{background-color:green;}
     margin-top: 2%;
     border-bottom: 3px solid #ad935d;
     line-height: 50px;
-    
+
   }
   .massage-blog-container {
     margin-top: 2%;
@@ -1123,7 +1129,7 @@ div.desc button:hover{background-color:green;}
     padding-bottom: 0%;
     display: block;
     float: left;
-    
+
   }
   .massage-header-in-blog {
     float: left;
@@ -1149,6 +1155,95 @@ div.desc button:hover{background-color:green;}
 
 
 
+/* slide */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

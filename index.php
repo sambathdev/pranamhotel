@@ -10,13 +10,44 @@
 <div class="indexbody">
   <!-- write your html here -->
   <div class="">
-    <h1 style="text-align:center;">Welcome To Pranam Hotel</h1>
-    <h1 style="text-align:center;"> <?php
+    <h1 class="welcomeindex">Welcome To Pranam Hotel</h1>
+    <h1 class="welcomeindex"> <?php
     if(isset($_SESSION['email']) && isset($_SESSION['loggedin'])) {
             print 'Mr. '.$_SESSION['email'].', you are loged in at '.$_SESSION['loggedin'];
     }
     ?></h1>
   </div>
+  <div class="">
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/wellness/ZOLK2SVVJRFJRGVFBFBSOOLGS4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/chef/picchef.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/room/deluxeroom1.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>  <!-- end slide -->
+
   <div class="bbcocontain">
     <div class="center">
       <div class="bbcodes">
