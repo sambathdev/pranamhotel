@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	// Handle the form:
 	if ( (!empty($_POST['email'])) && (!empty($_POST['password'])) ) {
 
-		if ( (strtolower($_POST['email']) == 'me@example.com') && ($_POST['password'] == 'testpass') ) { // Correct!
+		if ( (strtolower($_POST['email']) == 'paragon@pranam.com') && ($_POST['password'] == 'pranam') ) { // Correct!
 			// Do session stuff:
 			date_default_timezone_set('Asia/Phnom_Penh');
 			session_start();
