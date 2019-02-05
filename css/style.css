@@ -1026,7 +1026,7 @@ div.desc button:hover{background-color:green;}
   overflow: auto;
 }
 .massage-img-in-blog {
-  width: 60%;
+  width: 100%;
   margin-bottom: 0%;
   padding-bottom: 0%;
   display: block;
@@ -1035,12 +1035,12 @@ div.desc button:hover{background-color:green;}
 }
 .massage-header-in-blog {
   float: left;
-  width: 40%;
+  width: 100%;
   text-align: center;
   color: #ad935d;
 }
 .massage-preview-in-blog {
-  width: 40%;
+  width: 100%;
   float: left;
   padding: 1%;
   font-size: 19px;
@@ -1052,6 +1052,53 @@ div.desc button:hover{background-color:green;}
 }
 .massage-reservation-in-blog-container > p {
   font-size: 19px;
+}
+/* Responsive Massage and Spa */
+@media only screen and (min-width: 1440px) {
+  .wellness-main-header {
+    text-align: center;
+    width: 540px;
+    margin: auto;
+    margin-top: 2%;
+    border-bottom: 3px solid #ad935d;
+    line-height: 50px;
+    
+  }
+  .massage-blog-container {
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 90%;
+    border: 2px solid #ad935d;
+    overflow: auto;
+  }
+  .massage-img-in-blog {
+    width: 60%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    display: block;
+    float: left;
+    
+  }
+  .massage-header-in-blog {
+    float: left;
+    width: 40%;
+    text-align: center;
+    color: #ad935d;
+  }
+  .massage-preview-in-blog {
+    width: 40%;
+    float: left;
+    padding: 1%;
+    font-size: 19px;
+  }
+  .massage-reservation-in-blog-container {
+    width: 40%;
+    float: left;
+    padding: 1%;
+  }
+  .massage-reservation-in-blog-container > p {
+    font-size: 19px;
+  }
 }
 
 
