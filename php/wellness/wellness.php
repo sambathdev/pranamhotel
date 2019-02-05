@@ -48,7 +48,6 @@
     <img class="introPic" src="../../img/wellness/brooke-lark-182428-unsplash.jpg" alt="">
     <h1 class="header-in-blog">Special technique</h1>
     <p class="preview-wellness">Few of us are born with innate massaging skills, yet virtually all of us love to give and receive good massages. Because of the many benefits of massage—relieving pain and reducing stress—learning to give a better massage to yourself or your partner can be profound, and everyone can do it. I spoke with expert masseuse and founder of Elements Therapeutic Massage, Michele Merhib, to gather some tips for increasing your massage-fu.</p>
-  <p></p>
   </div>
   <script>
 var slideIndex = 1;
