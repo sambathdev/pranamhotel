@@ -20,6 +20,15 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="../js/js.js"></script>
+    <?php
+      if(defined('TITLE')){
+        if(TITLE == 'Pranam Hotel'){
+          print '<script type="text/javascript" src="js/js.js"></script>';
+        }else{
+          print '<script type="text/javascript" src="../../js/js.js"></script>';
+        }
+      }
+    ?>
+
   </body>
 </html>

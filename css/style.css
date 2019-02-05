@@ -60,8 +60,8 @@ body{
 	border-radius: 10px 10px 0px 0px;
 	padding: 20px;
 }
-form, .content {
-	width: 30%;
+.loginform, .content {
+	width: 40%;
 	margin: 0px auto;
 	padding: 20px;
 	border: 1px solid #B0C4DE;
@@ -111,17 +111,26 @@ form, .content {
 }
 
 
-.logintitle{
+.logouttitle{
 	text-align: center !important;
-	color: red;
+	color: grey;
 	font-size: 50px;
 	line-height: 90px;
 }
 .logintitle1{
 	text-align: center !important;
-	color: red;
-	font-size: 30px;
+	color: grey;
+	font-size: 40px;
 	line-height: 90px;
+  display: block;
+  margin-top: 50px;
+}
+.logintitle2{
+  text-align: center !important;
+  color: grey;
+  font-size: 30px;
+  margin-bottom: 30px;
+
 }
 .welcomes{
 	text-align: center;
@@ -130,6 +139,43 @@ form, .content {
 .logout{
 	font-size: 50px;
 }
+.button--pill{
+  width: 80px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #e6ffff;
+  border: none;
+  cursor: pointer;
+}
+.rowheight{
+  height: 50px;
+}
+.boxsize{
+  height: 30px;
+  font-size: 20px;
+}
+.text--error{
+  text-align: center;
+  font-size: 20px;
+}
+
+.loginagain{
+  text-align: center;
+  text-decoration: none;
+  font-size: 50px;
+  margin-top: 40px;
+  display: block;
+
+}
+.discover{
+  display: block;
+  width: 190px;
+  height: 50px;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #e6ffff;
+}
+
 
 
 /*accommodation---------------------------------------*/
