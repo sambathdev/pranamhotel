@@ -17,6 +17,17 @@
       <p>e-mail: hotel@hotelcurious.com</p>
     </div>
   </div>
+  <div class="massage-blog-container">
+    <img class="massage-img-in-blog" src="../../img/wellness/SPA-Female-Massage-01-v11.jpg" alt="">
+    <h1 class="massage-header-in-blog" >Underrated Spa in Cambodia</h1>
+    <p class="massage-preview-in-blog">Pranam's spa is a location where mineral-rich spring water (and sometimes seawater) is used to give medicinal baths. Spa towns or spa resorts (including hot springs resorts) typically offer various health treatments, which are also known as balneotherapy. The belief in the curative powers of mineral waters goes back to prehistoric times. Such practices have been popular worldwide, but are especially widespread in Europe and Japan. Day spas are also quite popular, and offer various personal care treatments.</p>
+    <div class="massage-reservation-in-blog-container">
+      <p>RESERVATIONS:</p> <br>
+      <p>At least, one day before</p>
+      <p>Tlf: +34 933 014 484</p>
+      <p>e-mail: hotel@hotelcurious.com</p>
+    </div>
+  </div>
 
 
 
