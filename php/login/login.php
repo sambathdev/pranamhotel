@@ -2,7 +2,9 @@
 /* This page lets people log into the site (almost!). */
 // Set the page title and include the header file:
 define('TITLE','Login');
-include('../../html/template/header-login.html');
+include('../../html/template/header-login.html');?>
+<div class="indexbody">
+<?php
 // Print some introductory text:
 print '<h2 class="logintitle1">Login Form</h2>
 	<p class="logintitle2">Users who are logged in can take advantage of certain features like this, that, and the other thing.</p>';
@@ -55,5 +57,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	';
 }
+?>
+
+</div>
+<?php
 include('../../html/template/footer-login.html');
 ?>
