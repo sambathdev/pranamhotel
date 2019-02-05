@@ -39,10 +39,16 @@
 <br>
 
 
-  <div id="firstBlock">
-    <img id="introPic" src="../../img/wellness/camille-kmile-1120204-unsplash.jpg" alt="">
-    <h1>High Qualities Shampoo </h1> <br> <br>
-    <p>Testers of all hair types adored this shampoo’s super-soft finish and subtle rose scent, though those with oily hair found that they had to wash more frequently. Gentle surfactants that will get your hair clean, but not so many moisturizing ingredients that it will be weighed down this shampoo left testers’ oily hair feeling light and refreshed. This shampoo was recently recommended to me and I haven't used anything else since. It gently cleans my hair without making it super dry. As for my conditioner, I use this mask from the same collection. A tiny bit each time I wash goes a long way and keeps my hair extra hydrated.</p>
+  <div class="blog-container-wellness">
+    <img class="introPic" src="../../img/wellness/camille-kmile-1120204-unsplash.jpg" alt="">
+    <h1 class="header-in-blog">High Qualities Shampoo </h1> <br> <br>
+    <p class="preview-wellness">Testers of all hair types adored this shampoo’s super-soft finish and subtle rose scent, though those with oily hair found that they had to wash more frequently. Gentle surfactants that will get your hair clean, but not so many moisturizing ingredients that it will be weighed down this shampoo left testers’ oily hair feeling light and refreshed. This shampoo was recently recommended to me and I haven't used anything else since. It gently cleans my hair without making it super dry. As for my conditioner, I use this mask from the same collection. A tiny bit each time I wash goes a long way and keeps my hair extra hydrated.</p>
+  </div>
+  <div class="blog-container-wellness">
+    <img class="introPic" src="../../img/wellness/brooke-lark-182428-unsplash.jpg" alt="">
+    <h1 class="header-in-blog">Special technique</h1>
+    <p class="preview-wellness">Few of us are born with innate massaging skills, yet virtually all of us love to give and receive good massages. Because of the many benefits of massage—relieving pain and reducing stress—learning to give a better massage to yourself or your partner can be profound, and everyone can do it. I spoke with expert masseuse and founder of Elements Therapeutic Massage, Michele Merhib, to gather some tips for increasing your massage-fu.</p>
+  <p></p>
   </div>
   <script>
 var slideIndex = 1;

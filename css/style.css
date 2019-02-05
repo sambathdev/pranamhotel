@@ -885,33 +885,59 @@ div.desc button:hover{background-color:green;}
 }
 
 /*wellness --------------------------*/
-#introPic {
-    width: 30%;
-    height: 30%;
+.introPic {
+  width: 30%;
+  height: 30%;
+  float: left;
+}
+.header-in-blog {
+  float: left;
+  width: 40%;
+  margin-left: 3%;
+  margin-top: 1%;
+  
+}
+.preview-wellness {
+  float: left;
+  width: 40%;
+  margin-left: 3%;
+  margin-top: 1%;
 
 }
-#firstBlock {
-    width: 100%;
-    height: auto;
-    margin: 10px;
-    margin-left: 16%;
-    
+.blog-container-wellness {
+  float: left;
+  width: 100%;
+  margin-top: 4%;
+  padding-left: 5%;
 }
-#firstBlock > img {
-    float :left;
+/* responsive wellness*/
+@media only screen and (max-width: 1024px) {
+.introPic {
+  width: 100%;
+  height: 100%;
+  float: left;
 }
-#firstBlock > h1 {
-    padding: 1%;
-	width: 50%;
-    float: left;
-    
+.header-in-blog {
+  float: left;
+  width: 100%;
+  margin-top: 2%;  
+  margin-left: 0%;
+  text-align: center;
 }
-#firstBlock > p {
-    padding-left: 1%;
-	width: 30%;
-    text-align: left;
-    float: left;
-    
+.preview-wellness {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  padding: 5%;
+  text-align: center;
+}
+.blog-container-wellness {
+  float: left;
+  width: 100%;
+  margin-top: 4%;
+  padding-left: 0%;
+}
+  
 }
 * {box-sizing:border-box}
 
@@ -927,33 +953,6 @@ div.desc button:hover{background-color:green;}
 /* Hide the images by default */
 .mySlides {
   display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
@@ -1009,12 +1008,6 @@ div.desc button:hover{background-color:green;}
   from {opacity: .4} 
   to {opacity: 1}
 }
-
-Step 
-
-
-
-
 
 
 
