@@ -886,58 +886,62 @@ div.desc button:hover{background-color:green;}
 
 /*wellness --------------------------*/
 .introPic {
-  width: 30%;
-  height: 30%;
+  width: 100%;
   float: left;
 }
 .header-in-blog {
   float: left;
-  width: 40%;
-  margin-left: 3%;
+  width: 100%;
   margin-top: 1%;
+  text-align: center;
   
 }
 .preview-wellness {
   float: left;
-  width: 40%;
-  margin-left: 3%;
+  width: 100%;
+  padding: 5%;
   margin-top: 1%;
+  text-align: center;
 
 }
 .blog-container-wellness {
   float: left;
-  width: 100%;
+  width: 95%;
+  margin-left: 2.5%;
   margin-top: 4%;
-  padding-left: 5%;
+  border: 2px solid #ad935d;
+  
 }
 /* responsive wellness*/
-@media only screen and (max-width: 1024px) {
-.introPic {
-  width: 100%;
-  height: 100%;
-  float: left;
-}
-.header-in-blog {
-  float: left;
-  width: 100%;
-  margin-top: 2%;  
-  margin-left: 0%;
-  text-align: center;
-}
-.preview-wellness {
-  float: left;
-  width: 100%;
-  margin-left: 0%;
-  padding: 5%;
-  text-align: center;
-}
-.blog-container-wellness {
-  float: left;
-  width: 100%;
-  margin-top: 4%;
-  padding-left: 0%;
-}
-  
+@media only screen and (min-width: 1440px) {
+  .introPic {
+    width: 50%;
+    display: block;
+    float: left;
+  }
+  .header-in-blog {
+    float: left;
+    margin-top: 2%;
+    width: 100%;
+    
+  }
+  .preview-wellness {
+    float: left;
+    width: 100%;
+    padding: 5%;
+    font-size: 19px;
+
+  }
+  .blog-container-wellness {
+    float: left;
+    width: 90%;
+    margin-top: 4%;
+    margin-left: 5%;
+  }
+  .wellness-description-in-blog {
+    float: right;
+    width: 50%;
+  }
 }
 * {box-sizing:border-box}
 
