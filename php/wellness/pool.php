@@ -5,10 +5,9 @@
 ?>
 
 <div class="indexbody">
-  <!-- write your html here -->
-  <p>start here</p>
-  <p>start here2</p>
-
+  <h1>Welcome to Pranam Pool</h1>
+  <div class="pool-blog-container">
+  </div>
 
 
 
