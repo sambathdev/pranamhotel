@@ -861,7 +861,41 @@ div.desc button:hover{background-color:green;}
 
 
 /*pool-----------------------------*/
-
+.pool-welcome-header {
+  text-align: center;
+    width: 390px;
+    margin: auto;
+    margin-top: 2%;
+    border-bottom: 3px solid #ad935d;
+    line-height: 40px;
+}
+.pool-blog-container {
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 28%;
+  height: 100%;
+  float: left;
+  border: solid 2px #ad935d;
+}
+.pool-img-in-blog {
+  width: 100%;
+}
+.pool-preview-in-blog {
+  margin: 5%;
+  width: 90%;
+  float: left;
+}
+.readMoreButton-in-blog {
+  width: 20%;
+  background-color: #ad935d;
+  height: 40px;
+  float: right;
+  text-align: center;
+  padding-top: 2.5%;
+  margin-bottom: 3%;
+  margin-right: 5%;
+  
+}
 
 /*premier room-----------------------*/
 p.titless {font-size: 40px;
@@ -938,8 +972,6 @@ div.desc button:hover{background-color:green;}
 
 /*wellness --------------------------*/
 .introPic {
-<<<<<<< HEAD
-=======
   width: 30%;
   height: 30%;
   float: left;
@@ -967,19 +999,15 @@ div.desc button:hover{background-color:green;}
 /* responsive wellness*/
 @media only screen and (max-width: 1024px) {
 .introPic {
->>>>>>> 88a18ca2c5211fbd3d7c520644c0afe6024d903b
   width: 100%;
   float: left;
 }
 .header-in-blog {
   float: left;
   width: 100%;
-<<<<<<< HEAD
   margin-top: 1%;
-=======
   margin-top: 2%;
   margin-left: 0%;
->>>>>>> 88a18ca2c5211fbd3d7c520644c0afe6024d903b
   text-align: center;
   
 }
@@ -996,14 +1024,9 @@ div.desc button:hover{background-color:green;}
   width: 95%;
   margin-left: 2.5%;
   margin-top: 4%;
-<<<<<<< HEAD
-  border: 2px solid #ad935d;
-  
-=======
   padding-left: 0%;
 }
 
->>>>>>> 88a18ca2c5211fbd3d7c520644c0afe6024d903b
 }
 /* responsive wellness*/
 @media only screen and (min-width: 1440px) {
