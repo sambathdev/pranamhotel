@@ -6,62 +6,51 @@
 <!-- include header -->
 
 <div class="body">
-  <h1 class="pagetitle">News & Promotions</h1>
-  <div class="blockcontain">
-    <div class="center">
-      <div class="makegrid">
-        <div class="block">
-          <img src="../../img/block1.jpg" alt="">
-          <div class="describtion">
-            <h1>BOND WITH DAD AT JW MARRIOTT HOTEL BANGKOK</h1>
-            <p>Give your dad the meal he deserves for Father’s Day! Treat the old man to a hearty and happy meal at one of his favourite restaurants on Father’s Day. Whether your dad loves a heavy Grand Brunch Buffet or a Dim Sum-filled feast, JW Marriott Hotel Bangkok with great Father’s […]</p>
-          </div>
-          <a href="#">More</a>
-        </div>
-        <div class="block">
-          <img src="../../img/room/premierroom2.jpg" alt="">
-          <div class="describtion">
-            <h1>BOND WITH DAD AT JW MARRIOTT HOTEL BANGKOK</h1>
-            <p>Give your dad the meal he deserves for Father’s Day! Treat the old man to a hearty and happy meal at one of his favourite restaurants on Father’s Day. Whether your dad loves a heavy Grand Brunch Buffet or a Dim Sum-filled feast, JW Marriott Hotel Bangkok with great Father’s […]</p>
-          </div>
-          <a href="#">More</a>
-        </div>
-        <div class="block">
-          <img src="../../img/wellness/camille-kmile-1120204-unsplash.jpg" alt="">
-          <div class="describtion">
-            <h1>BOND WITH DAD AT JW MARRIOTT HOTEL BANGKOK</h1>
-            <p>Give your dad the meal he deserves for Father’s Day! Treat the old man to a hearty and happy meal at one of his favourite restaurants on Father’s Day. Whether your dad loves a heavy Grand Brunch Buffet or a Dim Sum-filled feast, JW Marriott Hotel Bangkok with great Father’s […]</p>
-          </div>
-          <a href="#">More</a>
-        </div>
-        <div class="block">
-          <img src="../../img/wellness/https___blueprint-api-production.s3.amazonaws.com_uploads_card_image_171914_EVEN.jpg" alt="">
-          <div class="describtion">
-            <h1>BOND WITH DAD AT JW MARRIOTT HOTEL BANGKOK</h1>
-            <p>Give your dad the meal he deserves for Father’s Day! Treat the old man to a hearty and happy meal at one of his favourite restaurants on Father’s Day. Whether your dad loves a heavy Grand Brunch Buffet or a Dim Sum-filled feast, JW Marriott Hotel Bangkok with great Father’s […]</p>
-          </div>
-          <a href="#">More</a>
-        </div>
-        <div class="block">
-          <img src="../../img/wellness/ZOLK2SVVJRFJRGVFBFBSOOLGS4.jpg" alt="">
-          <div class="describtion">
-            <h1>BOND WITH DAD AT JW MARRIOTT HOTEL BANGKOK</h1>
-            <p>Give your dad the meal he deserves for Father’s Day! Treat the old man to a hearty and happy meal at one of his favourite restaurants on Father’s Day. Whether your dad loves a heavy Grand Brunch Buffet or a Dim Sum-filled feast, JW Marriott Hotel Bangkok with great Father’s […]</p>
-          </div>
-          <a href="#">More</a>
-        </div>
-        <div class="block">
-          <img src="../../img/meeting/7272_sm_05_p_2048x1536.jpg" alt="">
-          <div class="describtion">
-            <h1>BOND WITH DAD AT JW MARRIOTT HOTEL BANGKOK</h1>
-            <p>Give your dad the meal he deserves for Father’s Day! Treat the old man to a hearty and happy meal at one of his favourite restaurants on Father’s Day. Whether your dad loves a heavy Grand Brunch Buffet or a Dim Sum-filled feast, JW Marriott Hotel Bangkok with great Father’s […]</p>
-          </div>
-          <a href="#">More</a>
-        </div>
-      </div>
-    </div> <!-- end center =============== -->
-  </div> <!-- end bodycontain -->
+  <h1 class="pagetitle">Sitemap</h1>
 
+  <div class="mkgrid">
+    <div class="">
+      <li> <a href="#">Home</a> </li>
+    </div>
+    <div class="">
+      <li> <a href="#">News and Promotions</a> </li>
+        <li> <a href="#">Special Offers</a> </li>
+    </div>
+    <div class="">
+      <li> <a href="#">Restaurant</a> </li>
+        <li> <a href="#">Khmer food</a> </li>
+        <li> <a href="#">Europe food</a> </li>
+        <li> <a href="#">Meet chef</a> </li>
+    </div>
+    <div class="">
+      <li> <a href="#">Accommodation</a> </li>
+        <li> <a href="#">Deluxe Room</a> </li>
+        <li> <a href="#">Premier Room</a> </li>
+        <li> <a href="#">Executive Room</a> </li>
+        <li> <a href="#">Meeting And Event </a> </li>
+    </div>
+    <div class="">
+      <li> <a href="#">Wellness</a> </li>
+        <li> <a href="#">Massage And Spa</a> </li>
+        <li> <a href="#">Pool</a> </li>
+        <li> <a href="#">Skybar</a> </li>
+        <li> <a href="#">Gym</a> </li>
+    </div>
+    <div class="">
+      <li> <a href="#">Contact Us</a> </li>
+        <li> <a href="#">Location</a> </li>
+    </div>
+    <div class="">
+      <li> <a href="#">Login</a> </li>
+    </div>
+    <div class="">
+      <li> <a href="#">Award</a> </li>
+      <li> <a href="#">History</a> </li>
+    </div>
+    <div class="">
+      <li> <a href="#">Sitemap</a> </li>
+    </div>
+  </div>
 
 </div> <!-- end body div =============== -->
 

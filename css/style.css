@@ -1316,3 +1316,11 @@ div.desc button:hover{background-color:green;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+
+/*sitemappe-------------------------*/
+.mkgrid{
+  display: grid;
+
+  grid-template-columns: 1fr
+}

@@ -324,6 +324,20 @@
                 ">History</a></li>
               </ul>
             </li>
+
+            <li><a href="
+              <?php
+                if(defined('TITLE')){
+                  if(TITLE == 'Pranam Hotel'){
+                    print 'php/sitemap/sitemap.php';
+                  }else{
+                    print '../sitemap/sitemap.php';
+                  }
+                }
+              ?>
+            ">Sitemap</a>
+            </li>
+
             <li><a href="#"> <i class="fas fa-search"></i></a></li>
 
 
