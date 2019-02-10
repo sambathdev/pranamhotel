@@ -22,15 +22,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 	if ( (!empty($_POST['username'])) && (!empty($_POST['password'])) ) {
 		$loggedin = FALSE; // Not currently logged in.
 		$username = $_POST['username'];
-		$password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-
-		$query = "SELECT * FROM users WHERE name='$username' AND password='$password'";
+		$password = $_POST['password'];
+		$query = "SELECT * FROM users WHERE name='$username'";
 		// $password = password_verify(trim($_POST['password']), $pw) ;
 		$results = mysqli_query($dbc, $query);
-		if (mysqli_num_rows($results) == 1) {
-			$loggedin = TRUE;
+		if (mysqli_num_rows($results) >= 1) {
+			if($row = mysqli_fetch_assoc($results)){
+				// $passcheck = password_verify($password, $row['password']);
+				print $row['password'];
+				print $row['name'];
+				if (password_verify($password, $row['password']) || $username == $row['name'] ) {
+					$loggedin = TRUE;
+					// mysqli_close($dbc);
+				}
+			}
+
 		}else {
-			// array_push($errors, "Wrong username/password combination");
+			array_push($errors, "Wrong username/password combination");
 		}
 
 /*
@@ -42,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 		// Loop through the file:
 		while ( $line = fgetcsv($fp, 200, "\t") ) {
 			// Check the file data against the submitted data:
-			if ( ($line[0] == $_POST['username']) && ($line[1] == password_verify(trim($_POST['password']), $line[1])) ) {
+			if ( ($line[0] == $_POST['username']) && (password_verify(trim($_POST['password']), $line[1])) ) {
 				$loggedin = TRUE; // Correct username/password combination.
 				// Stop looping through the file:
 				break;
