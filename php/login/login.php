@@ -2,7 +2,15 @@
 /* This page lets people log into the site (almost!). */
 // Set the page title and include the header file:
 define('TITLE','Login');
-include('../../html/template/header-login.html');?>
+include('../../html/template/header-login.html');
+
+if($dbc = mysqli_connect('localhost', 'root', 'a', 'testsite') ){
+	print '<p>yeah yeah</p>';
+}else{
+	print '<p>can not connect</p>';
+}
+
+?>
 
 <?php // Script 11.8 - login.php
 /* This script logs a user in by check the stored values in text file. */
@@ -13,6 +21,20 @@ $file =  '../users/users.txt';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 	if ( (!empty($_POST['username'])) && (!empty($_POST['password'])) ) {
 		$loggedin = FALSE; // Not currently logged in.
+		$username = $_POST['username'];
+		$password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+
+		$query = "SELECT * FROM users WHERE name='$username' AND password='$password'";
+		// $password = password_verify(trim($_POST['password']), $pw) ;
+		$results = mysqli_query($dbc, $query);
+		if (mysqli_num_rows($results) == 1) {
+			$loggedin = TRUE;
+		}else {
+			// array_push($errors, "Wrong username/password combination");
+		}
+
+/*
+//------------
 		// Enable auto_detect_line_settings:
 		ini_set('auto_detect_line_endings', 1);
 		// Open the file:
@@ -28,6 +50,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 		} // End of WHILE.
 		fclose($fp); // Close the file.
 		// Print a message:
+//----------------------------------------
+*/
+
 		if ($loggedin) {
 			date_default_timezone_set('Asia/Phnom_Penh');
 			session_start();

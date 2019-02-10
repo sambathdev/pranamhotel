@@ -2,7 +2,14 @@
 /* This page lets people log into the site (almost!). */
 // Set the page title and include the header file:
 define('TITLE','Login');
-include('../../html/template/header-login.html');?>
+include('../../html/template/header-login.html');
+if($dbc = mysqli_connect('localhost', 'root', 'a', 'testsite') ){
+	print '<p>yeah yeah</p>';
+}else{
+	print '<p>can not connect</p>';
+}
+
+?>
 
 <?php // Script 11.6 - register.php /* This script registers a user by storing their information in a text file and
 //creating a directory for them. */ // Identify the directory and file to use:
@@ -25,6 +32,7 @@ include('../../html/template/header-login.html');?>
 			print '<p class="error">Your password did not match your confirmed password!</p>';
 		}
 		if (!$problem) { // If there weren't any problems...
+/*
 			if (is_writable($file)) { // Open the file.
 				// Create the data to be written:
 				$subdir = time() . rand(0, 4596);
@@ -43,6 +51,20 @@ include('../../html/template/header-login.html');?>
 				fclose($myfile);
 				print '<p class="error">You could not be registered due to a system error.</p>';
 			}
+*/
+
+			$pass = password_hash(trim($_POST['password1']), PASSWORD_BCRYPT);
+			$nam = $_POST['username'];
+			$query = "INSERT INTO users (name, password) VALUES ('$nam', '$pass')";
+			// Execute the query:
+			if (mysqli_query($dbc, $query)) {
+				print '<p>The blog entry has been added!</p>';
+			} else {
+				print '<p style="color: red;">Could not add the entry because:<br>' . '.</p><p>The query being run was: ' . $query . '</p>';
+			}
+			mysqli_close($dbc);
+
+
 		} else { // Forgot a field.
 			print '<p class="error">Please go back and try again!</p>';
 		}
