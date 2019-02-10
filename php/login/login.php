@@ -3,63 +3,71 @@
 // Set the page title and include the header file:
 define('TITLE','Login');
 include('../../html/template/header-login.html');?>
-<div class="indexbody">
-<?php
-// Print some introductory text:
+
+<?php // Script 11.8 - login.php
+/* This script logs a user in by check the stored values in text file. */
 print '<h2 class="logintitle1">Login Form</h2>
 	<p class="logintitle2">Users who are logged in can take advantage of certain features like this, that, and the other thing.</p>';
-// Check if the form has been submitted:
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
-	// Handle the form:
-	if ( (!empty($_POST['email'])) && (!empty($_POST['password'])) ) {
-
-		if ( (strtolower($_POST['email']) == 'paragon@pranam.com') && ($_POST['password'] == 'pranam') ) { // Correct!
-			// Do session stuff:
+// Identify the file to use:
+$file =  '../users/users.txt';
+if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
+	if ( (!empty($_POST['username'])) && (!empty($_POST['password'])) ) {
+		$loggedin = FALSE; // Not currently logged in.
+		// Enable auto_detect_line_settings:
+		ini_set('auto_detect_line_endings', 1);
+		// Open the file:
+		$fp = fopen($file, 'rb');
+		// Loop through the file:
+		while ( $line = fgetcsv($fp, 200, "\t") ) {
+			// Check the file data against the submitted data:
+			if ( ($line[0] == $_POST['username']) && ($line[1] == password_verify(trim($_POST['password']), $line[1])) ) {
+				$loggedin = TRUE; // Correct username/password combination.
+				// Stop looping through the file:
+				break;
+			} // End of IF.
+		} // End of WHILE.
+		fclose($fp); // Close the file.
+		// Print a message:
+		if ($loggedin) {
 			date_default_timezone_set('Asia/Phnom_Penh');
 			session_start();
-			$_SESSION['email'] = $_POST['email'];
+			$_SESSION['username'] = $_POST['username'];
 			$_SESSION['loggedin'] = date('l F j, Y h:i A');
-			// Redirect the user to the welcome page!
 			ob_end_clean(); // Destroy the buffer!
-			header ('Location: ../../index.php');
+			header('Location: ../../index.php');
 			exit();
-		} else { // Incorrect!
-
+		} else {
 			print '<p class="text--error">The submitted email address and password do not match those on file!<br>Go back and try again.</p>';
 			print '<a href="login.php" class = "loginagain"><p>login again! </p></a>';
 		}
-	} else { // Forgot a field.
+	} else{
 		print '<p class="text--error">Please make sure you enter both an email address and a password!<br>Go back and try again.</p>';
 		print '<a href="login.php" class = "loginagain"><p>login again! </p></a>';
 	}
-
 } else { // Display the form.
-
-	print '<form class="loginform" action="login.php" method="post" class="form--inline">
-	<table>
-		<tr class="rowheight">
-			<td><label for="email">Email Address:</label></td>
-			<td><input class="boxsize" type="email" name="email" size="30"></td>
-		</tr>
-		<tr class="rowheight">
-			<td><label for="password">Password:</label></td>
-			<td><input class="boxsize" type="password" name="password" size="30"></td>
-		</tr>
-		<tr>
-			<td><p><input type="submit" name="submit" value="Log In!" class="button--pill"></p></td>
-			<td><a href="../../index.php" class="discover"><p>Discover without Login</p></a></td>
-		</tr>
-	</table>
-
-
-	</form>
-
-	';
-}
+// Leave PHP and display the form:
 ?>
+<form class="loginform" action="login.php" method="post" class="form--inline">
+<table>
+	<tr class="rowheight">
+		<td><label for="email">Username</label></td>
+		<td><input class="boxsize" type="text" name="username" size="30"></td>
+	</tr>
+	<tr class="rowheight">
+		<td><label for="password">Password:</label></td>
+		<td><input class="boxsize" type="password" name="password" size="30"></td>
+	</tr>
+	<tr>
+		<td><p><input type="submit" name="submit" value="Log In!" class="button--pill"></p></td>
+		<td><a href="../../index.php" class="discover"><p>Discover without Login</p></a></td>
+		<td><a href="register.php" class="discover"><p>register</p></a></td>
+	</tr>
+</table>
 
-</div>
+
+</form>
+<?php } // End of submission IF. ?>
+
 <?php
 include('../../html/template/footer-login.html');
 ?>

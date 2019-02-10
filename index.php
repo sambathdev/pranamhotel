@@ -12,8 +12,8 @@
   <div class="">
     <h1 class="welcomeindex">Welcome To Pranam Hotel</h1>
     <h1 class="welcomeindex"> <?php
-    if(isset($_SESSION['email']) && isset($_SESSION['loggedin'])) {
-            print 'Mr. '.$_SESSION['email'].', you are loged in at '.$_SESSION['loggedin'];
+    if(isset($_SESSION['username']) && isset($_SESSION['loggedin'])) {
+            print 'Mr. '.$_SESSION['username'].', you are loged in at '.$_SESSION['loggedin'];
     }
     ?></h1>
   </div>

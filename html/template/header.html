@@ -272,7 +272,7 @@
             </li>
             <li><a href="
               <?php
-              if(isset($_SESSION['email'])) {
+              if(isset($_SESSION['username'])) {
                 if(defined('TITLE')){
                   if(TITLE == 'Pranam Hotel'){
                     print 'php/login/logout.php';
@@ -291,7 +291,7 @@
               }
               ?>
             "> <?php
-              if(isset($_SESSION['email'])) {
+              if(isset($_SESSION['username'])) {
                 print 'Log Out';
               }else{
                 print 'Log In';
@@ -325,13 +325,6 @@
               </ul>
             </li>
             <li><a href="#"> <i class="fas fa-search"></i></a></li>
-            <li><?php
-              if(isset($_SESSION['username'])){
-                echo '<form action="../login/logout.php" method="post">
-                         <button type="submit" name="logout-submit">Logout</button>
-                      </form>';
-              }
-            ?></li>
 
 
           </ul>
