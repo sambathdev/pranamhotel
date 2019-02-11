@@ -4,8 +4,8 @@
 define('TITLE','Login');
 include('../../html/template/header-login.html');
 
-if($dbc = mysqli_connect('localhost', 'root', 'a', 'testsite') ){
-	print '<p>yeah yeah</p>';
+if($dbc = mysqli_connect('localhost', 'root', 'a', 'pranam') ){
+	print '<p>connected to pranam database</p>';
 }else{
 	print '<p>can not connect</p>';
 }
@@ -31,14 +31,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 				// $passcheck = password_verify($password, $row['password']);
 				print $row['password'];
 				print $row['name'];
-				if (password_verify($password, $row['password']) || $username == $row['name'] ) {
+				$iscorrect = password_verify($password, $row['password']);
+
+				if ( $password == $row['confirmpassword']  ) {
 					$loggedin = TRUE;
 					// mysqli_close($dbc);
 				}
 			}
 
 		}else {
-			array_push($errors, "Wrong username/password combination");
+			// array_push($errors, "Wrong username/password combination");
 		}
 
 /*

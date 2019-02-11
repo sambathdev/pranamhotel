@@ -3,8 +3,8 @@
 // Set the page title and include the header file:
 define('TITLE','Login');
 include('../../html/template/header-login.html');
-if($dbc = mysqli_connect('localhost', 'root', 'a', 'testsite') ){
-	print '<p>yeah yeah</p>';
+if($dbc = mysqli_connect('localhost', 'root', 'a', 'pranam') ){
+	print '<p>connected to pranam database</p>';
 }else{
 	print '<p>can not connect</p>';
 }
@@ -53,9 +53,10 @@ if($dbc = mysqli_connect('localhost', 'root', 'a', 'testsite') ){
 			}
 */
 
-			$pass = password_hash(trim($_POST['password1']), PASSWORD_BCRYPT);
+			$pass = password_hash(trim($_POST['password1']), PASSWORD_DEFAULT);
+			$realpass = trim($_POST['password1']);
 			$nam = $_POST['username'];
-			$query = "INSERT INTO users (name, password) VALUES ('$nam', '$pass')";
+			$query = "INSERT INTO users (name, password, confirmpassword) VALUES ('$nam', '$pass', '$realpass')";
 			// Execute the query:
 			if (mysqli_query($dbc, $query)) {
 				print '<p>The blog entry has been added!</p>';
