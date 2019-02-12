@@ -639,10 +639,18 @@ nav ul ul a:hover {
 }
 ;
 /*index----------------------------------*/
+
 .indexbody{
 	width: 100%;
 	margin-top: 60px;
 }
+.medias{
+  max-width: 500px;
+  margin-left: 200px;
+  display: block;
+  float: right;
+}
+
 .bbcocontain{
 	width: 100%;
 	padding-bottom: 50px;
@@ -895,7 +903,7 @@ div.desc button:hover{background-color:green;}
   padding-top: 2.5%;
   margin-bottom: 3%;
   margin-right: 5%;
-  
+
 }
 
 /*premier room-----------------------*/
@@ -1010,7 +1018,7 @@ div.desc button:hover{background-color:green;}
   margin-top: 2%;
   margin-left: 0%;
   text-align: center;
-  
+
 }
 .preview-wellness {
   float: left;
@@ -1040,7 +1048,7 @@ div.desc button:hover{background-color:green;}
     float: left;
     margin-top: 2%;
     width: 100%;
-    
+
   }
   .preview-wellness {
     float: left;

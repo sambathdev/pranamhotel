@@ -17,6 +17,23 @@ if($dbc = mysqli_connect('localhost', 'root', 'a', 'pranam') ){
  	$dir = '../users/';
 	$file = $dir . 'users.txt';
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
+
+		if (move_uploaded_file ($_FILES['the_file']['tmp_name'], "../../uploads/{$_FILES['the_file']['name']}")) {
+			print '<p>Your file has been uploaded.</p>';
+		} else { // Problem!
+			print '<p style="color: red;">Your file could not be uploaded because: ';
+			// Print a message based upon the error:
+			switch ($_FILES['the_file']['error']) {
+				case 1:	print 'The file exceeds the upload_max_filesize setting in php.ini';break;
+				case 2:	print 'The file exceeds the MAX_FILE_SIZE setting in the HTML form';break;
+				case 3:	print 'The file was only partially uploaded';break;
+				case 4:	print 'No file was uploaded';break;
+				case 6: print 'The temporary folder does not exist.';break;
+				default:print 'Something unforeseen happened.';break;
+			}
+			print '.</p>'; // Complete the paragraph.
+		}
+
 		$problem = FALSE; // No problems so far.
 	// Check for each value...
 		if (empty($_POST['username'])) {
@@ -75,7 +92,7 @@ if($dbc = mysqli_connect('localhost', 'root', 'a', 'pranam') ){
 	} else { // Display the form.
 			// Leave PHP and display the form:
 ?>
-<form class="loginform" action="register.php" method="post">
+<form class="loginform" enctype="multipart/form-data" action="register.php" method="post">
 	<table>
 		<tr class="rowheight">
 			<td> <label>Username:</label> </td>
@@ -88,6 +105,10 @@ if($dbc = mysqli_connect('localhost', 'root', 'a', 'pranam') ){
 		<tr class="rowheight">
 			<td><label>Confirm Password:</label></td>
 			<td><input class="boxsize" type="password" name="password2" size="20"></td>
+		</tr>
+		<tr>
+			<td><input type="hidden" name="MAX_FILE_SIZE" value="300000">
+			<p><input type="file" name="the_file"></p></td>
 		</tr>
 		<tr class="rowheight">
 			<td><input class="discover" type="submit" name="submit" value="Register"></td>
