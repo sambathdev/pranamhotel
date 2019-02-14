@@ -1464,3 +1464,6 @@ div.desc button:hover{background-color:green;}
   margin: 5%;
 }
 
+.centers{
+  max-width: 1600px !important;
+}
