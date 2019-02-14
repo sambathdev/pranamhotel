@@ -1,9 +1,10 @@
 
 
 #welMes {
+    width: 100%;
     text-align: center;
     margin-top: 5%;
-    font-size: 70px;
+    font-size: 0px;
     font-family: "Lobster", serif;
 }
 

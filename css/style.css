@@ -1364,3 +1364,98 @@ div.desc button:hover{background-color:green;}
 .holdsite{
   max-width: 90% !important;
 }
+/*Gym---------------------------------------------------*/
+
+
+#welMes {
+  width: 780px;
+  margin: auto;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 70px;
+  font-family: "Lobster", serif;
+  border-bottom: #ad935d solid 2px;
+}
+
+.blog-container {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10%;
+  float: left;
+  border: #ad935d solid 2px;
+}
+.pic-in-blog-left {
+  float: left;
+  width: 600px;
+}
+.pic-in-blog-right {
+  float: right;
+  width: 600px;
+}
+.preview-in-blog-right {
+  float: left;
+  width: 50%;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 3%;
+  padding-top: 1%;
+
+  
+}
+.preview-in-blog-left {
+  float: left;
+  width: 50%;
+  padding: 3%;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 1%;
+  
+}
+
+/*----------------Skybar--------------------------------*/
+.wellness-skybar-welcome {
+  margin: auto;
+  margin-top: 1%;
+  width: 420px;
+  border-bottom: #ad935d solid 2px;
+}
+
+.wellness-skybar-blog-container {
+  width: 40%;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  float: left;
+  border: #ad935d solid 2px;
+  height: 800px;
+}
+.wellness-skybar-img-in-blog {
+  float: left;
+  width: 100%;
+}
+.wellness-skybar-preview-in-blog {
+  padding: 5%;
+  padding-top: 3%;
+  width: 100%;
+  float: left;
+}
+.wellness-skybar-h2-in-blog {
+  color: #ad935d;
+  padding-top: 2%;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.wellness-skybar-reservation-in-blog {
+  padding-left: 5%;
+  font-size: 20px;
+  width: 100%;
+  margin-bottom: 1%;
+}
+.wellness-skybar-reservation-p-in-blog {
+  margin-bottom: 1%;
+  width: 100%;
+  float: left;
+  padding-left: 5%;
+}
+
