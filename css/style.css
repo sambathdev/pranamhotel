@@ -1427,7 +1427,7 @@ div.desc button:hover{background-color:green;}
   margin-right: 5%;
   float: left;
   border: #ad935d solid 2px;
-  height: 800px;
+  height: 850px;
 }
 .wellness-skybar-img-in-blog {
   float: left;
@@ -1457,5 +1457,10 @@ div.desc button:hover{background-color:green;}
   width: 100%;
   float: left;
   padding-left: 5%;
+}
+.wellness-skybar-readmore-img {
+  width: 20%;
+  float: right;
+  margin: 5%;
 }
 
