@@ -668,7 +668,7 @@ nav ul ul a:hover {
 .bbcoimg{
 	width: 30%;
 	height: 200px;
-	padding: 5%;
+	padding: 2%;
 	float: left;
 }
 .bbcoimg img{
@@ -733,8 +733,24 @@ nav ul ul a:hover {
   font-size: 40px;
   color: grey;
 }
+.seemore{
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  border: 1px var(--titlemenu) solid;
+  max-width: 120px;
+  color: var(--titlemenu);
+  float: right;
+  margin-bottom: 10px;
+}
+.coltitle{
+  color: var(--titlemenu);
+  margin-bottom: 20px;
+}
+.breakfastdes{
+  line-height: 25px;
+}
 
-;
 /*khmerfood----------------------------*/
 .menukhmerfood {
 	margin-left: auto;
