@@ -77,6 +77,7 @@ if($dbc = mysqli_connect('localhost', 'root', 'a', 'pranam') ){
 			// Execute the query:
 			if (mysqli_query($dbc, $query)) {
 				print '<p>The blog entry has been added!</p>';
+				print '<p> <a href="../../index.php">Home</a> </p>';
 			} else {
 				print '<p style="color: red;">Could not add the entry because:<br>' . '.</p><p>The query being run was: ' . $query . '</p>';
 			}
