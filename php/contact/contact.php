@@ -5,103 +5,44 @@
 ?>
 
 <div class="indexbody">
-  <!-- write your html here -->
-  <div id="contactForm">
-	<style>
-		#contactForm a{text-decoration:underline;white-space: nowrap;}
-		#contactForm .heading{color:red; font-weight:bold; font-size:130%}
-		#contactForm h4{color:#CC3784;line-height: 1em;padding-bottom: 1em;padding-top: 1em;}
-	</style>
-<table>
-	<td>
-	<h2>
-		Get In Touch
-	</h2>
-	<br/>
-	<p>
-		Please complete all fields below.
-	</p>
-<br/>
-	<form id="contactUsForm" action="" method="post">
-		<div class="form-group">
-			<label id="labelFName" for="custSer_fName"><strong>First Name</strong></label>
-			<input id="custSer_fName" name="custSer_fName" class="form-control" aria-describedby="emailHelp" placeholder="Enter First Name" type="text">
-			<div id="custSer_fName_err" class="input-error"></div>
-		<br/>
-			<label id="labelLName" for="custSer_lName"><strong>Last Name</strong></label>
-			<input id="custSer_lName" name="custSer_lName" class="form-control" aria-describedby="emailHelp" placeholder="Enter Last Name" type="text">
-			<div id="custSer_lName_err" class="input-error"></div>
-		<br/>
-			<label id="labelAddress" for="custSer_address"><strong>Address</strong></label>
-			<input id="custSer_address" name="custSer_address" class="form-control" aria-describedby="emailHelp" placeholder="Enter Address, City, State, Zip/Postal, Country" type="text">
-			<div id="custSer_address_err" class="input-error"></div>
-		<!-- br/>
-			<label id="labelCityStateZip" for="custSer_cityStateZip">City, State, and Zip / Postal Code</label>
-			<input id="custSer_address" name="custSer_cityStateZip" class="form-control" aria-describedby="emailHelp" placeholder="Enter City, State, and Zip / Postal Code" type="text">
-			<div id="custSer_cityStateZip_err" class="input-error"></div>
-		<br/>
-			<label id="labelCountry" for="custSer_country">Country</label>
-			<input id="custSer_country" name="custSer_country" class="form-control" aria-describedby="emailHelp" placeholder="Enter Country" type="text">
-			<div id="custSer_country_err" class="input-error"></div -->
-
-		<br/>
-			<label id="labelPhone" for="custSer_phone"><strong>Phone#</strong></label>
-			<input id="custSer_phone" name="custSer_phone" class="form-control" aria-describedby="emailHelp" placeholder="Enter Phone#" type="tel">
-			<div id="custSer_email_err" class="input-error"></div>
-		<br/>
-			<label id="labelEmail" for="email"><strong>Email address</strong></label>
-			<input id="custSer_email" name="custSer_email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" type="email">
-			<div id="custSer_email_err" class="input-error"></div>
-		</div>
-		<div class="form-group">
-			<label id="labelComment" for="email"><strong>Comments</strong></label>
-			<textarea id="custSer_comments" name="custSer_comments" class="form-control"></textarea>
-			<div id="custSer_comments_err" class="input-error"></div>
-		</div>
-		<div class="contactus-privacy-statement">
-			<p><font size="2">We care about your privacy and want you to be informed about our practices.<br/> Review our privacy statement for full details on how we use and protect information.</font><p>
-		</div>
-		<div class="form-group">
-			<button id="contactUsSubmit" title="Click To Submit" class="btn btn-primary" type="submit">Submit</button>
-		</div>
-	</form>
-</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>
-	<h2>
-		Contact Us
-</h2>
-	<p>
-		<strong><br />Call Us</strong>
-	</p>
-	<p>
-        +855 67 666 067<br/>
-        +855 17 666 067<br/>
-        +855 70 666 067<br/>
-		Monday to Sunday from 8 a.m. – 10 p.m. Eastern Time. Holiday hours may vary.
-	</p>
-	<p>
-		<strong><br />Email Us</strong>
-	</p>
-	<p>
-		<a href="https://Contacts.pranamhotel@gmail.com" target="_blank">contacts.pranamhotel@gmail.com</a>
-	</p>
-	<p>
-		<strong><br/>Visit Our Site</strong>
-</P>
-Vattanac Capital Tower, No. 66, Preah Monivong Blvd, Sangkat Wat Phnom,<br/> Khan Daun Penh, Phnom Penh, Kingdom of Cambodia., Daun Penh, Phnom Penh, Cambodia
-	<p>
-		<strong><br/>Find Us On Facebook</strong>
-<p>
-	<p>
-		<a href="www.facebook.com/pranamhotel" target="_blank">www.facebook.com/pranamhotel</a>
-
-</td>
-</table>
-
+  <div class="center">
+    <div class="containerform">
+      <div style="text-align:center">
+        <h2>Contact Us</h2>
+        <p>Swing by for a cup of coffee, or leave us a message:</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.699349557424!2d104.91666691431868!3d11.573397391783718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095143a986fc07%3A0xc4976c41ebdc86bf!2z4Z6i4Z624Z6C4Z624Z6a4Z6c4Z6M4Z-S4Z6N4Z6T4Z-I!5e0!3m2!1sen!2skh!4v1548781517477" frameborder="0" width="100%" height="400px" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="column">
+          <form action="contact.php" method="post">
+            <label for="fname">First Name</label>
+            <input class="fullbox" type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input class="fullbox" type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Country</label>
+            <select class="fullbox" id="country" name="country">
+              <option value="cambodia">Cambodia</option>
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+            <label for="subject">Comment</label>
+            <textarea class="fullbox" id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <input class="subbut" type="submit" value="Submit">
+            <?php
+              if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+                if(isset( $_POST['firstname'] )){
+                  print '<p>sent</p>';
+                }
+              }
+            ?>
+          </form>
+        </div>
+      </div>
+    </div> <!-- end containerform -->
+  </div> <!-- end center -->
 
 </div>
 

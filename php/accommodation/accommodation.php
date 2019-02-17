@@ -5,44 +5,40 @@
 ?>
 
 <div class="indexbody">
-  <!-- write your html here -->
-  <p ></p>
-  <div class="center centers">
-    <p class="titless" align="center">Accommodation Available</p>
-    <p ></p>
 
-
-
-    <div class="gallery">
-    <a href="deluxeroom.php">
-      <img src="../../img/room/deluxeroom.jpg" alt="Cinque Terre" width="1200" height="800">
-    </a>
-    <div class="desc">Deluxe Room</div>
+  <div class="w3-row-padding w3-padding-16 padding100px center" id="about">
+    <div class="w3-col m6 margin-bot50px">
+      <a href="#" class="accomblock">
+        <img src="https://www.w3schools.com/w3images/avatar_g.jpg" alt="Me" style="width:100%">
+        <h4>Deluxe Room</h4>
+        <p>Guest room, 1 King or 2 Twin/Single Bed(s)</p>
+      </a>
     </div>
-
-    <div class="gallery">
-    <a href="premierroom.php">
-      <img src="../../img/room/premierroom.jpg" alt="Cinque Terre" width="1200" height="800">
-    </a>
-    <div class="desc">Premier Room</div>
+    <div class="w3-col m6 margin-bot50px">
+      <a href="#" class="accomblock">
+        <img src="https://www.w3schools.com/w3images/avatar_g.jpg" alt="Me" style="width:100%">
+        <h4>Deluxe Room</h4>
+        <p>Guest room, 1 King or 2 Twin/Single Bed(s)</p>
+      </a>
     </div>
-
-    <div class="gallery">
-    <a href="executiveroom.php">
-      <img src="../../img/room/executiveroom.jpg" alt="Cinque Terre" width="1200" height="800">
-    </a>
-    <div class="desc">Executive Room</div>
+    <div class="w3-col m6 margin-bot50px">
+      <a href="#" class="accomblock">
+        <img src="https://www.w3schools.com/w3images/avatar_g.jpg" alt="Me" style="width:100%">
+        <h4>Deluxe Room</h4>
+        <p>Guest room, 1 King or 2 Twin/Single Bed(s)</p>
+      </a>
     </div>
-
-    <div class="gallery">
-    <a href="meetingandevent.php">
-      <img src="../../img/room/eventroom.jpg" alt="Cinque Terre" width="1200" height="800">
-    </a>
-    <div class="desc">Event Room</div>
+    <div class="w3-col m6 margin-bot50px">
+      <a href="#" class="accomblock">
+        <img src="https://www.w3schools.com/w3images/avatar_g.jpg" alt="Me" style="width:100%">
+        <h4>Deluxe Room</h4>
+        <p>Guest room, 1 King or 2 Twin/Single Bed(s)</p>
+      </a>
     </div>
   </div>
 
 </div>
+
 
 <?php
 include('../../html/template/footer.html');

@@ -5,60 +5,74 @@
 ?>
 
 <div class="indexbody">
-  <!-- write your html here -->
-  <p ></p>
-  <div class="center centers">
-
-    <p class="titless" align="center">Deluxe Room Available</p>
-    <p ></p>
-
-
-    <div class="gallerydeluxe">
-    <a target="_blank" href="deluxeroom1.jpg">
-      <img src="../../img/room/deluxeroom1.jpg" alt="Cinque Terre" width="1200" height="800">
-    </a>
-    <div class="desc">Deluxe Room 1 <button type="button" onclick="alert('Tel: 016569055')">Book Now</button> </div>
+  <div class="w3-row-padding w3-padding-16 center">
+    <div class="w3-third w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/room_single.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Single Room</h3>
+        <h6 class="w3-opacity">From $99</h6>
+        <p>Single bed</p>
+        <p>15m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom chooseroom">Choose Room</button>
+      </div>
     </div>
-
-    <div class="gallerydeluxe">
-    <a target="_blank" href="deluxeroom2.jpg">
-      <img src="../../img/room/deluxeroom2.jpg" alt="Cinque Terre" width="1200" height="800">
-    </a>
-    <div class="desc">Deluxe Room 2 <button type="button" onclick="alert('Tel: 016569055')">Book Now</button> </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/room_single.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Single Room</h3>
+        <h6 class="w3-opacity">From $99</h6>
+        <p>Single bed</p>
+        <p>15m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom chooseroom">Choose Room</button>
+      </div>
     </div>
-
-    <div class="gallerydeluxe">
-    <a target="_blank" href="deluxeroom3.jpg">
-      <img src="../../img/room/deluxeroom3.jpg" alt="Cinque Terre" width="1200" height="800">
-    </a>
-    <div class="desc">Deluxe Room 3 <button type="button" onclick="alert('Tel: 016569055')">Book Now</button> </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/room_single.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Single Room</h3>
+        <h6 class="w3-opacity">From $99</h6>
+        <p>Single bed</p>
+        <p>15m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom chooseroom">Choose Room</button>
+      </div>
     </div>
-
-    <div class="gallerydeluxe">
-    <a target="_blank" href="deluxeroom4.jpg">
-      <img src="../../img/room/deluxeroom4.jpg" alt="Cinque Terre" width="1200" height="800">
-    </a>
-    <div class="desc">Deluxe Room 4 <button type="button" onclick="alert('Tel: 016569055')">Book Now</button> </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/room_single.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Single Room</h3>
+        <h6 class="w3-opacity">From $99</h6>
+        <p>Single bed</p>
+        <p>15m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom chooseroom">Choose Room</button>
+      </div>
     </div>
-
-    <div class="gallerydeluxe">
-    <a target="_blank" href="deluxeroom5.jpg">
-      <img src="../../img/room/deluxeroom5.jpg" alt="Cinque Terre" width="1200" height="800">
-    </a>
-    <div class="desc">Deluxe Room 5 <button type="button" onclick="alert('Tel: 016569055')">Book Now</button> </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/room_double.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Double Room</h3>
+        <h6 class="w3-opacity">From $149</h6>
+        <p>Queen-size bed</p>
+        <p>25m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom chooseroom">Choose Room</button>
+      </div>
     </div>
-
-    <div class="gallerydeluxe">
-    <a target="_blank" href="deluxeroom6.jpg">
-      <img src="../../img/room/deluxeroom6.jpg" alt="Cinque Terre" width="1200" height="800">
-    </a>
-    <div class="desc">Deluxe Room 6 <button type="button" onclick="alert('Tel: 016569055')">Book Now</button> </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/room_deluxe.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Deluxe Room VIP</h3>
+        <h6 class="w3-opacity">From $199</h6>
+        <p>King-size bed</p>
+        <p>40m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom chooseroom">Choose Room</button>
+      </div>
     </div>
-
   </div>
-
-
-
 </div>
 
 <?php

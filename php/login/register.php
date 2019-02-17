@@ -3,12 +3,7 @@
 // Set the page title and include the header file:
 define('TITLE','Login');
 include('../../html/template/header-login.html');
-if($dbc = mysqli_connect('localhost', 'root', 'a', 'pranam') ){
-	print '<p>connected to pranam database</p>';
-}else{
-	print '<p>can not connect</p>';
-}
-
+include('connect.php');
 ?>
 
 <?php // Script 11.6 - register.php /* This script registers a user by storing their information in a text file and

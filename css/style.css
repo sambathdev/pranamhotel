@@ -13,6 +13,9 @@
 body{
   background-color: var(--bg);
 }
+.margin-top20px{
+  margin-top: 20px;
+}
 .center{
   max-width: 1200px;
   position: relative;
@@ -42,6 +45,15 @@ body{
 	float: left;
 	margin-top: 60px;
   	width: 100%;
+}
+.padding50px{
+  padding: 50px;
+}
+.padding100px{
+  padding: 100px;
+}
+.margin-bot50px{
+  margin-bottom: 50px;
 }
 
 
@@ -179,36 +191,12 @@ body{
 
 
 
+
+
 /*accommodation---------------------------------------*/
-p.titless {font-size: 40px;
-  color: gold;}
-
-  p.titless:hover {font-size: 40px;
-    color: green;}
-
-div.gallery {
-  background-color:#D3C094;
-  margin: 18px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 720px;
+.accomblock{
+  text-decoration: none;
 }
-
-div.gallery:hover {
-  border: 1px solid #777;
-  background-color: #C98755;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
 /*award ----------------------------------------*/
 
 /*chef ----------------------------------------*/
@@ -266,11 +254,63 @@ div.desc {
   line-height: 25px;
 }
 
-;
+
 /*contact----------------------------------*/
 
+.fullbox {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.subbut {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.containerform {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
 /*deluxeroom-------------------------------------*/
-p.titless {font-size: 40px;
+p.titless {
+  font-size: 40px;
   color: gold;}
 div.gallerydeluxe {
   background-color:#D3C094;
@@ -305,6 +345,9 @@ div.desc button {
     font-size: 16px;
   }
 div.desc button:hover{background-color:green;}
+
+
+
 
 /*europefood-------------------------------*/
 .menueuropefood {
@@ -750,6 +793,15 @@ nav ul ul a:hover {
 .breakfastdes{
   line-height: 25px;
 }
+
+.booking-title{
+  background-color: var(--titlemenu) !important;
+}
+.chooseroom{
+  background-color: var(--titlemenu) !important;
+}
+
+
 
 /*khmerfood----------------------------*/
 .menukhmerfood {
@@ -1400,7 +1452,7 @@ div.desc button:hover{background-color:green;}
   padding-left: 3%;
   padding-top: 1%;
 
-  
+
 }
 .preview-in-blog-left {
   float: left;
@@ -1409,7 +1461,7 @@ div.desc button:hover{background-color:green;}
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 1%;
-  
+
 }
 
 /*----------------Skybar--------------------------------*/

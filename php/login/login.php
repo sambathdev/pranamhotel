@@ -3,12 +3,7 @@
 // Set the page title and include the header file:
 define('TITLE','Login');
 include('../../html/template/header-login.html');
-
-if($dbc = mysqli_connect('localhost', 'root', 'a', 'pranam') ){
-	print '<p>connected to pranam database</p>';
-}else{
-	print '<p>can not connect</p>';
-}
+include('connect.php');
 
 ?>
 
@@ -21,6 +16,7 @@ $file =  '../users/users.txt';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 	if ( (!empty($_POST['username'])) && (!empty($_POST['password'])) ) {
 		$loggedin = FALSE; // Not currently logged in.
+		$isadmin = FALSE;
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 		$query = "SELECT * FROM users WHERE name='$username'";
@@ -35,7 +31,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 
 				if ( $password == $row['confirmpassword']  ) {
 					$loggedin = TRUE;
-					// mysqli_close($dbc);
+					if($username == 'admin'){
+						$isadmin = TRUE;
+					}
 				}
 			}
 
@@ -64,6 +62,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 */
 
 		if ($loggedin) {
+			if($isadmin){
+				date_default_timezone_set('Asia/Phnom_Penh');
+				session_start();
+				$_SESSION['username'] = $_POST['username'];
+				$_SESSION['loggedin'] = date('l F j, Y h:i A');
+				$_SESSION['admin'] = TRUE;
+				ob_end_clean();
+				header('Location: ../admin/admin.php');
+				exit();
+			}
 			date_default_timezone_set('Asia/Phnom_Penh');
 			session_start();
 			$_SESSION['username'] = $_POST['username'];
