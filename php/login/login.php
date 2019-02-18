@@ -6,11 +6,11 @@ include('../../html/template/header-login.html');
 include('connect.php');
 
 ?>
+<div class="loginbody">
 
+<div class="loginbodycenter">
 <?php // Script 11.8 - login.php
 /* This script logs a user in by check the stored values in text file. */
-print '<h2 class="logintitle1">Login Form</h2>
-	<p class="logintitle2">Users who are logged in can take advantage of certain features like this, that, and the other thing.</p>';
 // Identify the file to use:
 $file =  '../users/users.txt';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
@@ -41,25 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 			// array_push($errors, "Wrong username/password combination");
 		}
 
-/*
-//------------
-		// Enable auto_detect_line_settings:
-		ini_set('auto_detect_line_endings', 1);
-		// Open the file:
-		$fp = fopen($file, 'rb');
-		// Loop through the file:
-		while ( $line = fgetcsv($fp, 200, "\t") ) {
-			// Check the file data against the submitted data:
-			if ( ($line[0] == $_POST['username']) && (password_verify(trim($_POST['password']), $line[1])) ) {
-				$loggedin = TRUE; // Correct username/password combination.
-				// Stop looping through the file:
-				break;
-			} // End of IF.
-		} // End of WHILE.
-		fclose($fp); // Close the file.
-		// Print a message:
-//----------------------------------------
-*/
+
 
 		if ($loggedin) {
 			if($isadmin){
@@ -90,27 +72,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 } else { // Display the form.
 // Leave PHP and display the form:
 ?>
+</div>
+
 <form class="loginform" action="login.php" method="post" class="form--inline">
-<table>
-	<tr class="rowheight">
-		<td><label for="email">Username</label></td>
-		<td><input class="boxsize" type="text" name="username" size="30"></td>
-	</tr>
-	<tr class="rowheight">
-		<td><label for="password">Password:</label></td>
-		<td><input class="boxsize" type="password" name="password" size="30"></td>
-	</tr>
-	<tr>
-		<td><p><input type="submit" name="submit" value="Log In!" class="button--pill"></p></td>
-		<td><a href="../../index.php" class="discover"><p>Discover without Login</p></a></td>
-		<td><a href="register.php" class="discover"><p>register</p></a></td>
-	</tr>
-</table>
+	<h2 class="logintitle1">Login Form</h2>
+	<input class="boxsize" type="text" name="username" size="30" placeholder="Username">
+	<input class="boxsize" type="password" name="password" size="30" placeholder="password">
+	<p><input type="submit" name="submit" value="Log In!" class="button--pill"></p>
+	<a href="../../index.php" class="discover"><p>Discover without Login</p></a>
+	<a href="register.php" class="discover"><p>Sign Up</p></a>
+
 
 
 </form>
 <?php } // End of submission IF. ?>
-
+</div>
 <?php
 include('../../html/template/footer-login.html');
 ?>

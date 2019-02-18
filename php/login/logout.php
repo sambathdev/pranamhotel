@@ -13,7 +13,6 @@ session_destroy();
 // Define a page title and include the header:
 define('TITLE', 'Logout');
 include('../../html/template/header.html');
-
 ?>
 <div class="indexbody">
 <p class="logouttitle">You are now logged out.</p>
