@@ -680,7 +680,18 @@ nav ul ul a:hover {
 
 
 }
-;
+/*view_comment*/
+.commentblock{
+  float: left;
+  width: 100%;
+  box-shadow: var(--titlemenu) 3px 3px 10px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.commentname{
+  font-size: 20px;
+}
 /*index----------------------------------*/
 
 .indexbody{

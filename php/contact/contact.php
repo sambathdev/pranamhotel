@@ -4,6 +4,42 @@
   include('../../html/template/header.html');
 ?>
 
+<?php // Script 12.4 - add_entry.php
+/* This script adds a blog entry to the database. */
+if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
+	// Validate the form data:
+	$problem = FALSE;
+	if (!empty($_POST['firstname']) && !empty($_POST['lastname'])) {
+		$firstname = trim(strip_tags($_POST['firstname']));
+		$lastname = trim(strip_tags($_POST['lastname']));
+    $comment = $_POST['subject'];
+    $country = $_POST['country'];
+	} else {
+		print '<p style="color: red;">Please submit both a firstname and lastname.</p>';
+		$problem = TRUE;
+	}
+
+	if (!$problem) {
+		// Connect and select:
+		include('../login/connect.php');
+		// Define the query:
+		$query = "INSERT INTO comments (first_name, last_name, country, comment, comment_date)
+		VALUES ('$firstname', '$lastname', '$country', '$comment', NOW())";
+		// Execute the query:
+		if (@mysqli_query($dbc, $query)) {
+			print '<p>The blog entry has been added!</p>';
+		} else {
+			print '<p style="color: red;">Could not add the entry because:<br>'
+			. mysqli_error($dbc) . '.</p><p>The query being run was: ' . $query . '</p>';
+		}
+		mysqli_close($dbc); // Close the connection.
+	} // No problem!
+} // End of form submission IF.
+// Display the form:
+?>
+
+
+
 <div class="indexbody">
   <div class="center">
     <div class="containerform">
