@@ -8,7 +8,9 @@
 <?php // Script 11.4 - upload_file.php /* This script displays and handles an HTML form. This script takes a file upload and stores it on the server. */
 if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 	// Try to move the uploaded file:
-	if (move_uploaded_file ($_FILES['the_file']['tmp_name'], "../../uploads/{$_FILES['the_file']['name']}")) {
+	$pathto = $_POST['path'].$_FILES['the_file']['name'];
+
+	if (move_uploaded_file ($_FILES['the_file']['tmp_name'], $pathto)) {
 		print '<p>Your file has been uploaded.</p>';
 	} else { // Problem!
 		print '<p style="color: red;">Your file could not be uploaded because: ';
@@ -29,5 +31,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 	<p>Upload a file using this form:</p>
 	<input type="hidden" name="MAX_FILE_SIZE" value="300000">
 	<p><input type="file" name="the_file"></p>
+	<select class="" name="path">
+		<option value="../../img/">img/</option>
+		<option value="../../img/chef/">img/chef</option>
+		<option value="../../img/europefood/">img/europefood</option>
+		<option value="../../img/khmerfood/">img/khmerfood</option>
+		<option value="../../img/meeting/">img/meeting</option>
+		<option value="../../img/restaurant/">img/restaurant</option>
+		<option value="../../img/wellness/">img/wellness</option>
+	</select>
 	<p><input type="submit" name="submit" value="Upload This File"></p>
 </form></body></html>
