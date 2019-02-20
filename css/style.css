@@ -539,7 +539,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     line-height: var(--navheight);
-    margin: 0 10px 0 10px;
+    margin: 0 5px 0 5px;
     background-color: #fff;
     color: #a5a5a5;
     text-align: center;
@@ -608,22 +608,21 @@ nav ul ul a:hover {
 
 @media screen and (max-width: 1000px){
   nav ul ul a{
-      font-size: 11px !important;
+      font-size: 14px !important;
   }
   nav ul li a {
-    font-size: 11px !important;
+    font-size: 14px !important;
+    margin: 0 5px 0 5px !important;
   }
+
   .center{
     max-width: 800px !important;
   }
-}
-
-@media screen and (max-width: 800px){
   nav ul ul a{
-      font-size: 11px !important;
+      font-size: 14px !important;
   }
   nav ul li a {
-    font-size: 11px !important;
+    font-size: 14px !important;
   }
   .center{
     max-width: 800px !important;
@@ -663,10 +662,9 @@ nav ul ul a:hover {
     font-size: 40px !important;
     text-align: right !important;
   }
-
-
-
 }
+
+
 /*view_comment*/
 .commentblock{
   float: left;
@@ -701,6 +699,29 @@ nav ul ul a:hover {
   float: right;
   font-size: 20px;
   color: red;
+}
+/* admin -------------*/
+.admintitle{
+  text-align: center;
+}
+.rmlink{
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+  text-align: center;
+}
+.admintask{
+  display: block;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  grid-gap: 3.5%;
+}
+.admintaskblock{
+  box-shadow: var(--titlemenu) 2px 2px 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+
 }
 /*index----------------------------------*/
 
