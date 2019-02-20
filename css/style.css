@@ -293,6 +293,7 @@ input[type=submit]:hover {
     width: 100%;
     margin-top: 0;
   }
+
 }
 
 /*deluxeroom-------------------------------------*/
@@ -344,13 +345,6 @@ div.desc button:hover{background-color:green;}
 	width: 1000px;
 }
 
-.block {
-	float: left;
-	margin-left: 50px;
-	margin-top: 20px;
-	width: 400px;
-	border: 1px solid brown;
-}
 
 
 .f2 {
@@ -470,7 +464,13 @@ div.desc button:hover{background-color:green;}
   .footfloattoright a{
     margin-right: 20px !important;
   }
-
+  .makegrid{
+    grid-template-columns: 48% 48% !important;
+    grid-gap: 3.5%;
+  }
+  .blockcontain{
+    margin-bottom: 100px !important;
+  }
 }
 @media screen and (max-width: 800px){
   .footfloattoright a{
@@ -809,13 +809,6 @@ nav ul ul a:hover {
 	width: 1000px;
 }
 
-.block {
-	float: left;
-	margin-left: 50px;
-	margin-top: 50px;
-	width: 400px;
-	border: 1px solid brown;
-}
 
 
 .f1 {
@@ -904,12 +897,10 @@ div.desc button:hover{background-color:green;}
 }
 .block{
   border: 1px var(--titlemenu) solid;
-  position: relative;
+  float: left;
 }
 .block img{
-  display: block;
   width: 100%;
-
 }
 .block a{
   display: block;
