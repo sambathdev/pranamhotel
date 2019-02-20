@@ -15,13 +15,33 @@
       $query = "SELECT * FROM comments WHERE id={$_GET['id']}";
       if ($r = mysqli_query($dbc, $query)) { // Run the query.
         $row = mysqli_fetch_array($r); // Retrieve the information.
-        print '<form action="delete_entry.php" method="post">
-        <p>Are you sure you want to delete this entry?</p>
-        <p><h3>' . $row['first_name'] . '</h3>' .
-        $row['last_name'] . '<br>
-        <input type="hidden" name="id" value="' . $_GET['id'] . '">
-        <input type="submit" name="submit" value="Delete this Entry!"></p>
-        </form>';
+
+
+        $pathprofile = '../../uploads/default.jpg';
+        $queryprofile = "SELECT * FROM users";
+        if($a = mysqli_query($dbc, $queryprofile)){
+          while ($rowprofile = mysqli_fetch_array($a)) {
+            if($rowprofile['name'] == $row['first_name']){
+              $pathprofile = $rowprofile['pathpro'];
+            }
+          }
+        }
+        print
+        '<div class="center">'.
+          '<form class="deleteform" action="delete_entry.php" method="post">'.
+          '<p class="deleteverify">Are you sure you want to delete this Comment?</p>'.
+          '<div class="commentblock">'.
+            '<img'. " class='profilecomment'" .'src="'. $pathprofile .'">'.
+            '<div class="cmhold">'.
+            '<P class="commentname"><b>'.$row['first_name'] ." ". $row['last_name'].'</b>'.' From '.$row['country'].'</P>'.
+            '<P class="cm">'.$row['comment'].'</P>'.
+            '</div>'.
+            '<input type="hidden" name="id" value="' . $_GET['id'] . '">'.
+            '<input class="deletesure" type="submit" name="submit" value="Delete!"></p>'.
+          '</div>'.
+          '</form>'.
+        '</div>';
+
 
       } else { // Couldn't get the information.
         print '<p style="color: red;">Could not retrieve the blog entry because:<br>'

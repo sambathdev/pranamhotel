@@ -670,9 +670,10 @@ nav ul ul a:hover {
   float: left;
   width: 100%;
   box-shadow: var(--titlemenu) 3px 3px 10px;
-  border-radius: 2px;
+  border-radius: 20px;
   margin-top: 15px;
   padding: 10px;
+  border-left: 7px var(--titlemenu) solid;
 }
 .commentname{
   font-size: 25px;
@@ -688,7 +689,7 @@ nav ul ul a:hover {
 .cm{
   margin-left: 20px;
   display: block;
-  color: red;
+  font-size: 20px;
 }
 .cmhold{
   width: 70%;
@@ -699,6 +700,47 @@ nav ul ul a:hover {
   float: right;
   font-size: 20px;
   color: red;
+}
+.deletecm:hover{
+  color: black;
+}
+.deleteform{
+  float: left;
+  width: 100%;
+}
+.deleteverify{
+  font-size: 30px;
+  margin-top: 20px;
+}
+.deletesure{
+  margin-top: 20px;
+  font-size: 20px;
+  float: right;
+  border: none;
+  color: red !important;
+  background: none;
+}
+.deletesure:hover{
+  background: none !important;
+  cursor: pointer;
+  color: black !important;
+}
+/* view profile */
+.profileview{
+  width: 150px;
+  height: 150px;
+  float: left;
+  border-radius: 100px;
+}
+.userblockss{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  grid-gap: 3.5%;
+  margin-bottom: 200px;
+}
+.userholds{
+  float: left;
 }
 /* admin -------------*/
 .admintitle{
