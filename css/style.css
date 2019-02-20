@@ -673,11 +673,34 @@ nav ul ul a:hover {
   width: 100%;
   box-shadow: var(--titlemenu) 3px 3px 10px;
   border-radius: 2px;
-  margin-bottom: 10px;
+  margin-top: 15px;
   padding: 10px;
 }
 .commentname{
+  font-size: 25px;
+}
+.profilecomment{
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  display: block;
+  float: left;
+  margin: 10px 20px 10px 10px;
+}
+.cm{
+  margin-left: 20px;
+  display: block;
+  color: red;
+}
+.cmhold{
+  width: 70%;
+  float: left;
+}
+.deletecm{
+  text-decoration: none;
+  float: right;
   font-size: 20px;
+  color: red;
 }
 /*index----------------------------------*/
 

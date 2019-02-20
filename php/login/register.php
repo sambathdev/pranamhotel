@@ -14,7 +14,8 @@ include('connect.php');
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 
 		if (move_uploaded_file ($_FILES['the_file']['tmp_name'], "../../uploads/{$_FILES['the_file']['name']}")) {
-			print '<p>Your file has been uploaded.</p>';
+      $pathpro = "../../uploads/{$_FILES['the_file']['name']}";
+      print '<p>Your file has been uploaded.</p>';
 		} else { // Problem!
 			$problem = TRUE;
 			print '<p style="color: red;">Your file could not be uploaded because: ';
@@ -51,7 +52,7 @@ include('connect.php');
 			$pass = password_hash(trim($_POST['password1']), PASSWORD_DEFAULT);
 			$realpass = trim($_POST['password1']);
 			$nam = $_POST['username'];
-			$query = "INSERT INTO users (name, password, confirmpassword) VALUES ('$nam', '$pass', '$realpass')";
+			$query = "INSERT INTO users (name, password, confirmpassword, pathpro) VALUES ('$nam', '$pass', '$realpass', '$pathpro')";
 			// Execute the query:
 			if (mysqli_query($dbc, $query)) {
 				print '<p>The blog entry has been added!</p>';
