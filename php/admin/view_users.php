@@ -9,6 +9,7 @@
 
   <div class="indexbody">
     <div class="center">
+      <p class="useraccounttitle">Pranam Hotel's User Account</p>
       <div class="userblockss">
         <?php
           $query = 'SELECT * FROM users ORDER BY id DESC';
@@ -19,9 +20,17 @@
                 $pathprofile = '../../uploads/default.jpg';
               }
               print
-                  '<div class="userholds">'.
+                  '<div class="userholds">';
+                  if($row['name'][0] === 's' || $row['name'][0] === 'h')
+                    print '<p class="premieraccount">Premier</p>';
+                  if($row['name'] === 'admin')
+                    print '<p class="premieraccount" style="background-color: pink;">Admin</p>';
+
+              print
                     '<img class="profileview" src="' . $pathprofile . '">'.
-                    '<P class="commentname"><b>'.$row['name'] .'</P>'.
+                    '<P class="profilename"><b>'.$row['name'] .'</P>'.
+                    '<p class="profiledes">Registration Date:'.' '.$row['reg_date'].'</p>'.
+                    '<p class="profiledes">Email Address:'.' '.$row['email'].'</p>'.
                   '</div>';
             }
           }

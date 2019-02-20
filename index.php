@@ -27,15 +27,15 @@
           <h2><i class="fa fa-bed w3-margin-right"></i>Pranam Hotel</h2>
         </div>
         <div class="w3-container w3-white w3-padding-16">
-          <form action="/action_page.php" target="_blank">
+          <form action="index.php" target="_blank">
             <div class="w3-row-padding" style="margin:0 -16px;">
               <div class="w3-half w3-margin-bottom">
                 <label><i class="fa fa-calendar-o"></i> Check In</label>
-                <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckIn" required>
+                <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="CheckIn" required>
               </div>
               <div class="w3-half">
                 <label><i class="fa fa-calendar-o"></i> Check Out</label>
-                <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckOut" required>
+                <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="CheckOut" required>
               </div>
             </div>
             <div class="w3-row-padding" style="margin:8px -16px;">

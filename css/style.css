@@ -669,11 +669,19 @@ nav ul ul a:hover {
 .commentblock{
   float: left;
   width: 100%;
-  box-shadow: var(--titlemenu) 3px 3px 10px;
+  /* box-shadow: var(--titlemenu) 3px 3px 10px; */
+  box-shadow: 0 2px 200px rgba(0,0,0,0.16);
   border-radius: 20px;
   margin-top: 15px;
   padding: 10px;
   border-left: 7px var(--titlemenu) solid;
+}
+.profilename{
+  font-size: 25px;
+  text-align: center;
+}
+.profiledes{
+  margin-left: 10px;
 }
 .commentname{
   font-size: 25px;
@@ -725,12 +733,30 @@ nav ul ul a:hover {
   cursor: pointer;
   color: black !important;
 }
+.hasdeleted{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+
+
+}
+.toadmin{
+  text-align: center;
+  margin: auto;
+  display: block;
+  text-decoration: none;
+  font-size: 30px;
+  width: 400px;
+  box-shadow: 0 2px 100px rgba(0,0,0,0.16);
+  margin-top: 70px;
+}
 /* view profile */
 .profileview{
+  display: block;
   width: 150px;
   height: 150px;
-  float: left;
   border-radius: 100px;
+  margin: auto;
 }
 .userblockss{
   width: 100%;
@@ -738,9 +764,18 @@ nav ul ul a:hover {
   grid-template-columns: 31% 31% 31%;
   grid-gap: 3.5%;
   margin-bottom: 200px;
+  margin-top: 20px;
+}
+.useraccounttitle{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
 }
 .userholds{
   float: left;
+  padding: 30px;
+  box-shadow: 0 2px 100px rgba(0,0,0,0.16);
+  position: relative;
 }
 /* admin -------------*/
 .admintitle{
@@ -749,6 +784,7 @@ nav ul ul a:hover {
 .rmlink{
   text-decoration: none;
   font-size: 30px;
+  /* font-weight: bold; */
   display: block;
   text-align: center;
 }
@@ -760,10 +796,39 @@ nav ul ul a:hover {
   grid-gap: 3.5%;
 }
 .admintaskblock{
-  box-shadow: var(--titlemenu) 2px 2px 10px;
-  margin-bottom: 10px;
+  box-shadow: 0 2px 100px rgba(0,0,0,0.10);
+  margin-bottom: 20px;
   padding: 10px;
-
+  position: relative;
+}
+.justcolor{
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-shadow: red 0 2px 10px ;
+  background-color: red;
+}
+.admintaskblock:hover > .justcolor{
+  box-shadow: grey 0 2px 10px !important;
+  background-color: grey !important;
+}
+.premieraccount{
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  height: 40px;
+  background-color: yellow;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Safari 3-8 */
+  transform: rotate(45deg);
 }
 /*index----------------------------------*/
 

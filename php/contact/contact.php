@@ -9,7 +9,7 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 	// Validate the form data:
 	$problem = FALSE;
-	if (!empty($_POST['firstname']) && !empty($_POST['lastname'])) {
+	if (!empty($_POST['firstname']) || !empty($_POST['lastname'])) {
 		$firstname = trim(strip_tags($_POST['firstname']));
 		$lastname = trim(strip_tags($_POST['lastname']));
     $comment = $_POST['subject'];
@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
         <div class="column">
           <form action="contact.php" method="post">
             <label for="fname">First Name</label>
-            <input class="fullbox" type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input class="fullbox" type="text" id="fname" name="firstname" placeholder="Your name.." >
             <label for="lname">Last Name</label>
             <input class="fullbox" type="text" id="lname" name="lastname" placeholder="Your last name..">
             <label for="country">Country</label>

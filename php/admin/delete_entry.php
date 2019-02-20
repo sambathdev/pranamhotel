@@ -52,8 +52,8 @@
     	$query = "DELETE FROM comments WHERE id={$_POST['id']} LIMIT 1";
     	$r = mysqli_query($dbc, $query); // Execute the query.
     	if (mysqli_affected_rows($dbc) == 1) {
-    		print '<p>The blog entry has been deleted.</p>';
-    		print '<a href="admin.php"><p>Go To AdminPage</p></a>';
+    		print '<p class="hasdeleted">Comment has been deleted.</p>';
+    		print '<a class="toadmin" href="admin.php"><p>Go To AdminPage</p></a>';
     	} else {
     		print '<p style="color: red;">Could not delete the blog entry because:<br>'
     		. mysqli_error($dbc) . '.</p><p>The query being run was: ' . $query . '</p>';

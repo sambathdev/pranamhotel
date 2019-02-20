@@ -52,7 +52,8 @@ include('connect.php');
 			$pass = password_hash(trim($_POST['password1']), PASSWORD_DEFAULT);
 			$realpass = trim($_POST['password1']);
 			$nam = $_POST['username'];
-			$query = "INSERT INTO users (name, password, confirmpassword, pathpro) VALUES ('$nam', '$pass', '$realpass', '$pathpro')";
+      $email = $_POST['email'];
+			$query = "INSERT INTO users (name, email, password, confirmpassword, pathpro, reg_date) VALUES ('$nam', '$email', '$pass', '$realpass', '$pathpro', NOW())";
 			// Execute the query:
 			if (mysqli_query($dbc, $query)) {
 				print '<p>The blog entry has been added!</p>';
@@ -77,6 +78,7 @@ include('connect.php');
 <form class="loginform" enctype="multipart/form-data" action="register.php" method="post">
 	<h2 class="logintitle1">Sign Up Form</h2>
 	<input class="boxsize" type="text" name="username" size="20" placeholder="Username">
+	<input class="boxsize" type="email" name="email" size="30" placeholder="Email Address">
 	<input class="boxsize" type="password" name="password1" size="20" placeholder="Password">
 	<input class="boxsize" type="password" name="password2" size="20" placeholder="Confirm Password">
 	<input type="hidden" name="MAX_FILE_SIZE" value="300000">
