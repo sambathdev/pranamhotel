@@ -1,9 +1,12 @@
 <?php
   session_start();
+  if(!$_SESSION['admin']){
+    header('location: ../../index.php');
+  }
   define('TITLE', 'Chef');
   include('../../html/template/header.html');
-?>
 
+?>
   <div class="indexbody">
     <div class="center">
       <h1 class="admintitle">Admin Control the website</h1>
@@ -30,9 +33,6 @@
       </div>
     </div>
   </div> <!-- end body div =============== -->
-
-
-
 
 <!-- include footer -->
 <?php

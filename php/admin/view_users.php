@@ -1,12 +1,12 @@
 <?php
   session_start();
+  if(!$_SESSION['admin']){
+    header('location: ../../index.php');
+  }
   define('TITLE', 'Chef');
   include('../../html/template/header.html');
   include('../login/connect.php');
-
 ?>
-
-
   <div class="indexbody">
     <div class="center">
       <p class="useraccounttitle">Pranam Hotel's User Account</p>
@@ -40,10 +40,7 @@
     </div>
 
   </div> <!-- end body div =============== -->
-
-
-
-<!-- include footer -->
+  <!-- include footer -->
 <?php
   include('../../html/template/footer.html');
 ?>

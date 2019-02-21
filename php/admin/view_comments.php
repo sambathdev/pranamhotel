@@ -1,17 +1,15 @@
 <?php
   session_start();
+  if(!$_SESSION['admin']){
+    header('location: ../../index.php');
+  }
   define('TITLE', 'Chef');
   include('../../html/template/header.html');
   include('../login/connect.php');
-
 ?>
-
-
-  <div class="indexbody">
-
-    <?php
+<div class="indexbody">
+  <?php
     $query = 'SELECT * FROM comments ORDER BY comment_date DESC';
-
     if ($r = mysqli_query($dbc, $query)) {
       while ($row = mysqli_fetch_array($r)) {
         $pathprofile = '../../uploads/default.jpg';
@@ -36,9 +34,8 @@
         </div>';
       }
     }
-     ?>
-  </div> <!-- end body div =============== -->
-
+  ?>
+</div> <!-- end body div =============== -->
 
 
 <!-- include footer -->

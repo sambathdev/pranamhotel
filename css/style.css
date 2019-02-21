@@ -75,8 +75,8 @@ body{
 
 .loginform, .content {
 	width: 40%;
-	margin: 0px auto;
 	padding: 50px;
+  margin: auto;
 	border: 1px solid #B0C4DE;
 	background: white;
 	border-radius: 0px 0px 10px 10px;
@@ -116,9 +116,13 @@ body{
 }
 .button--pill:hover{
   background-color: #e6e6e6 !important;
+  width: 100%;
 }
 .button--pill{
-  width: 100%;
+  transition: 1s;
+  display: block;
+  width: 80%;
+  margin: auto;
   height: 50px;
   font-size: 20px;
   background-color: var(--titlemenu);
@@ -133,7 +137,10 @@ body{
 .boxsize{
   outline: none;
   border: none;
-  width: 100%;
+  display: block;
+  width: 80%;
+  text-align: center;
+  margin: auto;
   padding-left: 10px;
   padding-right: 10px;
   background-color: #e6e6e6;
@@ -141,7 +148,43 @@ body{
   font-size: 20px;
   border-radius: 5px;
   margin-bottom: 10px;
+  transition: 1s;
 }
+.boxsize:focus{
+  width: 90%;
+}
+.bx{
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+.bx1{
+  width: 49% !important;
+  float: left;
+  margin-right: 1%;
+}
+.bx2{
+  width: 49% !important;
+  float: left;
+  margin-left: 1%;
+}
+.bx1:focus{
+  width: 59% !important;
+}
+.bx1:focus + .bx2{
+  width: 39% !important;
+}
+.dobsignup{
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+ .sexsignup{
+   width: 80%;
+  display: block;
+  margin: auto;
+}
+
 .text--error{
   text-align: center;
   font-size: 20px;
@@ -157,10 +200,12 @@ body{
 }
 .discover:hover{
   background-color: #f2f2f2;
+  width: 100%;
 }
 .discover{
   display: block;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   height: 50px;
   font-size: 20px;
   text-decoration: none;
@@ -170,6 +215,7 @@ body{
   line-height: 50px;
   text-align: center;
   background-color: var(--titlemenu);
+  transition: 1s;
 }
 .profilesignup{
   margin: 10px 0 10px 0;

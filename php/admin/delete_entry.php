@@ -1,15 +1,14 @@
 <?php
   session_start();
+  if(!$_SESSION['admin']){
+    header('location: ../../index.php');
+  }
   define('TITLE', 'Chef');
   include('../../html/template/header.html');
   include('../login/connect.php');
-
 ?>
-
-
-  <div class="indexbody">
-    <?php
-
+<div class="indexbody">
+  <?php
     if (isset($_GET['id']) && is_numeric($_GET['id']) ) { // Display the entry in a form:
       // Define the query:
       $query = "SELECT * FROM comments WHERE id={$_GET['id']}";
@@ -61,14 +60,9 @@
     } else { // No ID received.
     	print '<p style="color: red;">This page has been accessed in error.</p>';
     }
+  ?>
+</div> <!-- end body div =============== -->
 
-     ?>
-  </div> <!-- end body div =============== -->
-
-
-
-
-<!-- include footer -->
 <?php
   include('../../html/template/footer.html');
 ?>

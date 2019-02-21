@@ -53,7 +53,11 @@ include('connect.php');
 			$realpass = trim($_POST['password1']);
 			$nam = $_POST['username'];
       $email = $_POST['email'];
-			$query = "INSERT INTO users (name, email, password, confirmpassword, pathpro, reg_date) VALUES ('$nam', '$email', '$pass', '$realpass', '$pathpro', NOW())";
+      $firstname = $_POST['firstname'];
+      $lastname = $_POST['lastname'];
+      $dob = $_POST['dob'];
+      $sex = $_POST['sex'];
+			$query = "INSERT INTO users (name, email, password, confirmpassword, pathpro, reg_date, first_name, last_name, sex, date_of_birth) VALUES ('$nam', '$email', '$pass', '$realpass', '$pathpro', NOW(), '$firstname', '$lastname', '$sex', '$dob')";
 			// Execute the query:
 			if (mysqli_query($dbc, $query)) {
 				print '<p>The blog entry has been added!</p>';
@@ -77,10 +81,21 @@ include('connect.php');
 </div>
 <form class="loginform" enctype="multipart/form-data" action="register.php" method="post">
 	<h2 class="logintitle1">Sign Up Form</h2>
+	<div class="bx">
+    <input class="boxsize bx1" type="text" name="firstname" size="20" placeholder="First Name">
+  	<input class="boxsize bx2" type="text" name="lastname" size="20" placeholder="Last Name">
+  </div>
 	<input class="boxsize" type="text" name="username" size="20" placeholder="Username">
 	<input class="boxsize" type="email" name="email" size="30" placeholder="Email Address">
 	<input class="boxsize" type="password" name="password1" size="20" placeholder="Password">
 	<input class="boxsize" type="password" name="password2" size="20" placeholder="Confirm Password">
+  <div class="dobsignup">
+    <label>Date Of Birth</label> <input type="date" name="dob">
+  </div>
+  <div class="sexsignup">
+    <label>Male</label> <input type="radio" name="sex" value="m">
+    <label>Female</label> <input type="radio" name="sex" value="f">
+  </div>
 	<input type="hidden" name="MAX_FILE_SIZE" value="300000">
 	<p class="profilesignup">Profile Picture <input type="file" name="the_file"></p>
 
