@@ -995,8 +995,18 @@ nav ul ul a:hover {
 .chooseroom{
   background-color: var(--titlemenu) !important;
 }
+.floatright{
+  float: right !important;
+}
 
+/* booking */
+.notav{
+  text-align: center;
+  font-size: 30px;
+  color: red;
+  margin-top: 20px;
 
+}
 
 /*khmerfood----------------------------*/
 .menukhmerfood {

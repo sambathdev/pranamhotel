@@ -27,6 +27,11 @@
           <p class="justcolor" style="box-shadow: cyan 0 2px 10px ;
           background-color: cyan;"></p>
         </div>
+        <div class="admintaskblock" style="color: pink;">
+          <a class="rmlink" href="../booking/viewbookedroom.php"> <p> <i class="fas fa-sitemap"></i> Booked Room</p> </a>
+          <p class="justcolor" style="box-shadow: pink 0 2px 10px ;
+          background-color: pink;"></p>
+        </div>
         <div class="admintaskblock">
           <a class="rmlink" href="view_comment.php"> <p>See comment</p> </a>
         </div>
