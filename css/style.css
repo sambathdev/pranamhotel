@@ -998,6 +998,9 @@ nav ul ul a:hover {
 .floatright{
   float: right !important;
 }
+.margintop50px{
+  padding-top: 50px !important;
+}
 
 /* booking */
 .notav{

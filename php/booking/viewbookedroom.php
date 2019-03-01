@@ -31,10 +31,10 @@
               $results = mysqli_query($dbc, $query);
               $row = mysqli_fetch_array($results);
             ?>
-            <img src="https://www.w3schools.com/w3images/room_single.jpg" alt="Norway" style="width:100%">
+            <img src="<?php print '../../'.$row['imgpath']; ?>" alt="Norway" style="width:100%">
             <div class="w3-container w3-white">
-              <form class="" action="booking.php?id=<?php print $roomid; ?>" method="post">
-                <h3><?php print $row['kind']; if($row['isavailable'] == 0) print " Not Available";?></h3>
+              <form class="" action="php/booking/booking.php?roomid=3" method="post">
+                <h3><?php print $row['roomname']; ?></h3>
                 <h6 class="w3-opacity">From $<?php print $row['price']; ?></h6>
                 <p>
                   <?php if($row['bed'] == 1 )

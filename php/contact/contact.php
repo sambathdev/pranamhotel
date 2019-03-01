@@ -9,22 +9,41 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 	// Validate the form data:
 	$problem = FALSE;
-	if (!empty($_POST['firstname']) || !empty($_POST['lastname'])) {
-		$firstname = trim(strip_tags($_POST['firstname']));
-		$lastname = trim(strip_tags($_POST['lastname']));
-    $comment = $_POST['subject'];
-    $country = $_POST['country'];
-	} else {
-		print '<p style="color: red;">Please submit both a firstname and lastname.</p>';
-		$problem = TRUE;
-	}
+	if(!isset($_SESSION['username'])){
+
+    if (!empty($_POST['firstname']) || !empty($_POST['lastname'])) {
+      $firstname = trim(strip_tags($_POST['firstname']));
+      $lastname = trim(strip_tags($_POST['lastname']));
+      $comment = $_POST['subject'];
+      $country = $_POST['country'];
+  	} else {
+  		print '<p style="color: red;">Please submit both a firstname and lastname.</p>';
+  		$problem = TRUE;
+  	}
+
+  }else{
+    if (!empty($_POST['subject']) ) {
+      $firstname = $_SESSION['username'];
+      $comment = $_POST['subject'];
+      $country = $_POST['country'];
+  	} else {
+  		print '<p style="color: red;">Please submit both a firstname and lastname.</p>';
+  		$problem = TRUE;
+  	}
+  }
 
 	if (!$problem) {
 		// Connect and select:
 		include('../login/connect.php');
 		// Define the query:
-		$query = "INSERT INTO comments (first_name, last_name, country, comment, comment_date)
-		VALUES ('$firstname', '$lastname', '$country', '$comment', NOW())";
+    if(!isset($_SESSION['username'])){
+      $query = "INSERT INTO comments (first_name, last_name, country, comment, comment_date)
+  		VALUES ('$firstname', '$lastname', '$country', '$comment', NOW())";
+    } else {
+      $query = "INSERT INTO comments (first_name, country, comment, comment_date)
+  		VALUES ('$firstname', '$country', '$comment', NOW())";
+    }
+
 		// Execute the query:
 		if (@mysqli_query($dbc, $query)) {
 			print '<p>The blog entry has been added!</p>';
@@ -53,6 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
         </div>
         <div class="column">
           <form action="contact.php" method="post">
+            <?php if(!isset($_SESSION['username'])){ ?>
             <label for="fname">First Name</label>
             <input class="fullbox" type="text" id="fname" name="firstname" placeholder="Your name.." >
             <label for="lname">Last Name</label>
@@ -64,6 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
               <option value="canada">Canada</option>
               <option value="usa">USA</option>
             </select>
+          <?php } ?>
             <label for="subject">Comment</label>
             <textarea class="fullbox" id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
             <input class="subbut" type="submit" value="Submit">
