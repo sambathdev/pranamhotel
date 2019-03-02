@@ -15,11 +15,12 @@
         while ($row = mysqli_fetch_array($r)) {
           print
           '<div class="center">
-            <div class="commentblock">'.
+            <div class="commentblock bookedblock">'.
               // '<img'. " class='profilecomment'" .'src="'. $pathprofile .'">'.
               '<div class="cmhold floatright">'.
               '<P class="commentname"><b>'.$row['name'] ." ". $row['phone_number'].'</b>'.'</P>'.
-              '<P class="cm">'.$row['comments'].'</P>';
+              '<P class="cm">'.$row['comments'].'</P>'.
+              '<a class="deletecm" href="unbook.php?id='.$row['room_id'].'"><i class="fas fa-trash-alt"></i>CheckOut</a>';
               ?>
               </div>
 

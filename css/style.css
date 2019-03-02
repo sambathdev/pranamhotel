@@ -1010,6 +1010,12 @@ nav ul ul a:hover {
   margin-top: 20px;
 
 }
+.bookedblock{
+  border-left: 0px var(--titlemenu) solid !important;
+  border-top: 7px var(--titlemenu) solid !important;
+  width: 44%;
+  margin: 10px 3% 0 3%;
+}
 
 /*khmerfood----------------------------*/
 .menukhmerfood {
@@ -1108,6 +1114,7 @@ div.desc button:hover{background-color:green;}
 .block{
   border: 1px var(--titlemenu) solid;
   float: left;
+  position: relative;
 }
 .block img{
   width: 100%;
@@ -1134,7 +1141,21 @@ div.desc button:hover{background-color:green;}
 
 
 }
+.discountstamp{
+  /* color: red; */
+  background-image: url("https://pngimage.net/wp-content/uploads/2018/05/blank-discount-sticker-png-1.png");
+  background-size: 120px 120px;
+  font-size: 30px;
+  line-height: 55px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 
+  width: 120px !important;
+  height: 120px;
+}
 
 /*pool-----------------------------*/
 .pool-welcome-header {

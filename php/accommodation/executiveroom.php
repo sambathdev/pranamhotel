@@ -25,7 +25,7 @@
                     print 'Double';
             ?> bed
           </p>
-          <p>15m<sup>2</sup></p>
+          <p><?php print $row['size']; ?>m<sup>2</sup></p>
           <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
           <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom chooseroom">Choose Room</button>
         </form>

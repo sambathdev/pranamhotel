@@ -28,25 +28,25 @@
           <h2><i class="fa fa-bed w3-margin-right"></i>Pranam Hotel</h2>
         </div>
         <div class="w3-container w3-white w3-padding-16">
-          <form action="index.php" target="_blank">
+          <form action="php/booking/searchavailable.php">
             <div class="w3-row-padding" style="margin:0 -16px;">
               <div class="w3-half w3-margin-bottom">
                 <label><i class="fa fa-calendar-o"></i> Check In</label>
-                <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="CheckIn" required>
+                <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="checkin" required>
               </div>
               <div class="w3-half">
                 <label><i class="fa fa-calendar-o"></i> Check Out</label>
-                <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="CheckOut" required>
+                <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="checkout" required>
               </div>
             </div>
             <div class="w3-row-padding" style="margin:8px -16px;">
               <div class="w3-half w3-margin-bottom">
                 <label><i class="fa fa-male"></i> Adults</label>
-                <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="6">
+                <input class="w3-input w3-border" type="number" value="1" name="adults" min="1" max="6">
               </div>
               <div class="w3-half">
                 <label><i class="fa fa-child"></i> Kids</label>
-              <input class="w3-input w3-border" type="number" value="0" name="Kids" min="0" max="6">
+              <input class="w3-input w3-border" type="number" value="0" name="kids" min="0" max="6">
               </div>
             </div>
             <button class="w3-button w3-dark-grey" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button>
@@ -77,7 +77,7 @@
                     print 'Double';
             ?> bed
           </p>
-          <p>15m<sup>2</sup></p>
+          <p><?php print $row['size']; ?>m<sup>2</sup></p>
           <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
           <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom chooseroom">Choose Room</button>
         </form>
