@@ -45,7 +45,7 @@
       <p class="preview-wellness">Testers of all hair types adored this shampoo’s super-soft finish and subtle rose scent, though those with oily hair found that they had to wash more frequently. Gentle surfactants that will get your hair clean, but not so many moisturizing ingredients that it will be weighed down this shampoo left testers’ oily hair feeling light and refreshed. This shampoo was recently recommended to me and I haven't used anything else since. It gently cleans my hair without making it super dry. As for my conditioner, I use this mask from the same collection. A tiny bit each time I wash goes a long way and keeps my hair extra hydrated.</p>
     </div>
     <img class="introPic" src="../../img/wellness/camille-kmile-1120204-unsplash.jpg" alt="">
-    
+
   </div>
   <div class="blog-container-wellness">
     <div class="wellness-description-in-blog">
@@ -81,7 +81,7 @@ function showSlides() {
 }
 </script>
 </div>
-
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="dea8cf05-54ce-4d6d-a802-d2c8ead779d4";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 <?php
 include('../../html/template/footer.html');
  ?>
